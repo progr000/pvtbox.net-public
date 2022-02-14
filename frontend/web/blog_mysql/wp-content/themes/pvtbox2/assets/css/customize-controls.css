@@ -1,0 +1,92 @@
+#customize-controls .control-section-sirat .accordion-section-title:hover,
+#customize-controls .control-section-sirat .accordion-section-title:focus {
+	background-color: #fff;
+}
+.control-section-sirat .accordion-section-title .button {
+	margin-top:  -4px;
+	font-weight: 400;
+	margin-left: 8px;
+}
+.rtl .control-section-sirat .accordion-section-title .button {
+	margin-left:  0;
+	margin-right: 8px;
+}
+.customize-control input[type=number], 
+.customize-control input[type=search], 
+.customize-control input[type=tel], 
+.customize-control input[type=url], 
+.customize-control input[type=text], 
+.customize-control input[type=password],
+.customize-control input[type=email],
+.customize-control select{
+	border: none;
+}
+.customize-control-title {
+    display: -webkit-inline-box;
+    font-size: 12px;
+    line-height: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    background: #0085ba;
+    padding: 0px 15px;
+    color: #fff;
+}
+
+/*------- Typogarphy ----------*/
+
+.customize-control-typography li.typography-font-weight,
+.customize-control-typography li.typography-font-style,
+.customize-control-typography li.typography-font-size,
+.customize-control-typography li.typography-line-height {
+    float: left;
+    width: 50%;
+}
+.customize-control-typography li.typography-font-weight select,
+.customize-control-typography li.typography-font-style select {
+    width: 90%;
+}
+.customize-control-typography li.typography-font-weight,
+.customize-control-typography li.typography-font-size {
+    clear: both;
+}
+.customize-control-typography li.typography-font-size input,
+.customize-control-typography li.typography-line-height input {
+    width: 118px;
+}
+input.typography-font-color {
+   padding: 0;
+   margin: 0;
+}
+.customize-control-typography ul{
+    border-bottom: solid 1px #999;
+    padding-bottom: 12px;
+}
+#customize-control-h1_typography,
+#customize-control-h2_typography,
+#customize-control-h3_typography,
+#customize-control-h4_typography,
+#customize-control-h5_typography{
+   border-bottom: solid 2px #1e1e1e1e;
+   padding-bottom: 12px;
+}
+
+/* ---------Customizer--------- */
+.control-section-sirat h3.accordion-section-title {
+    font-size: 14px !important;
+    color: #121212 !important;
+    background: #febe00 !important;
+}
+a.button.button-secondary.alignright {
+    color: #fff;
+    box-shadow: none;
+    font-weight: bold;
+    padding: 1px 10px;
+    background: #121212;
+    height: 32px;   
+    font-size: 12px !important;
+    border-radius: 0;
+}
+a.button.button-secondary.alignright:hover {
+	background: #fff;
+	color: #121212;
+}

@@ -1,0 +1,9 @@
+0 0 * * * /var/www/Direct-link/yii cron/reset-share-count-in24
+10 0 * * * /var/www/Direct-link/yii cron/send-email-license-will-expire-soon
+20 0 * * * /var/www/Direct-link/yii cron/send-email-license-expired
+30 0 * * * /var/www/Direct-link/yii cron/delete-old-logs
+40 0 * * * /var/www/Direct-link/yii cron/calculate-count-shares-and-collaborations
+50 0 * * * /var/www/Direct-link/yii cron/delete-old-patches
+
+0 0 * * * /var/www/Direct-link/tests/bin/pvtbox-yii-tests.sh
+0 0 * * * /var/www/Direct-link/tests/bin/pvtbox-db-tests.sh

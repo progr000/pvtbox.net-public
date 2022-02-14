@@ -1,0 +1,75 @@
+.odometer.odometer-theme-default {
+    margin-top: -3px;
+}
+.odometer.odometer-theme-car {
+    margin-top: -3px;
+}
+.odometer.odometer-theme-train-station {
+    margin-top: -5px;
+}
+/*.odometer .odometer-inside .odometer-digit:first-child,*/
+/*.odometer .odometer-inside .odometer-formatting-mark:nth-child(2),*/
+
+.odometer-today .odometer .odometer-inside .odometer-digit:last-child,
+.odometer-today .odometer .odometer-inside .odometer-formatting-mark,
+.odometer-total .odometer .odometer-inside .odometer-digit:last-child,
+.odometer-month .odometer .odometer-inside .odometer-digit:last-child {
+    display: none
+}
+
+.odometer .odometer-inside .odometer-formatting-mark,
+.odometer .odometer-inside .odometer-digit {
+    /*
+    background-image: -webkit-gradient(linear,50% 0%,50% 100%,color-stop(0%,#fc8f42),color-stop(40%,#fc8f42),color-stop(60%,#101010),color-stop(80%,#fc8f42),color-stop(100%,#fc8f42));
+    */
+    color: #fc8f42;
+}
+.odometer.odometer-theme-car {
+    /*
+    background: #fc8f42;
+    */
+}
+
+.odometer-theme-example {
+    display: inline-block;
+    *width: 30%;
+    margin: 0 15px 0 15px;
+    font-size: 30px;
+    line-height: 35px;
+}
+.odometer.odometer-theme-car .odometer-digit {
+    margin-top: -3px;
+}
+.odometer-theme-example .od-inline {
+    display: inline-block;
+}
+.odometer-theme-example p {
+    padding-right: 40px;
+    font-size: 15px;
+}
+.odometer-theme-example:first-child p {
+    padding-right: 55px;
+}
+@media (max-width: 1000px) {
+    .odometer-theme-example {
+        font-size: 25px;
+        line-height: 30px;
+    }
+}
+@media (max-width: 768px) {
+    .odometer-theme-example {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .odometer-theme-example p {
+        padding-right: 35px;
+    }
+}
+@media (max-width: 600px) {
+    .odometer-theme-example {
+        display: block;
+        margin-bottom: 20px;
+        font-size: 30px;
+        line-height: 35px;
+    }
+}

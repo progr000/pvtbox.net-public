@@ -1,0 +1,525 @@
+/* view-list.css */
+/* Wrapper for list view */
+.elfinder .elfinder-cwd-wrapper-list {
+    /* */
+    border: 5px solid #f1f1f1;
+}
+
+.elfinder .elfinder-cwd-fixheader {
+    border-left: 5px solid #f1f1f1;
+    border-top: 5px solid #f1f1f1;
+    border-right: none;
+    border-bottom: none;
+    width: 100%;
+}
+
+/* List view table */
+.elfinder .elfinder-cwd-wrapper-list table {
+    /* */
+    background-color: #ffffff;
+}
+
+
+/* Column headings */
+.elfinder .elfinder-cwd-wrapper-list table thead tr td {
+    color: #43536a;
+    background-color: #ffffff;
+    border: none;
+}
+
+.elfinder .elfinder-cwd-wrapper-list table /*thead*/ tr td:nth-child(-n+2) {/* :not(:last-child) {*/
+    /*border-right: 2px solid #EAEAEA;*/
+    height: 25px;
+}
+
+/* Hovered column heading */
+.elfinder .elfinder-cwd-wrapper-list table thead tr td.ui-state-hover,
+.elfinder .elfinder-cwd-wrapper-list table thead tr td:hover {
+    background: #d0dded;
+}
+
+/* Actively sorted column heading */
+.elfinder .elfinder-cwd-wrapper-list table thead tr td.ui-state-active {
+    /*border-right: 2px solid #EAEAEA;*/
+    background-color: #ffffff;
+    font-weight: bold;
+}
+
+.elfinder .elfinder-cwd-wrapper-list table thead tr td.elfinder-cwd-view-th-name,
+.elfinder .elfinder-cwd-wrapper-list table tbody tr td.elfinder-cwd-view-th-name {
+    /* width: 35%; */
+    /*width: 340px;*/
+    /*max-width: 340px;*/
+    min-width: 200px;
+    text-align: left;
+    vertical-align: middle;
+    border: none;
+}
+.elfinder .elfinder-cwd-wrapper-list table thead tr td.elfinder-cwd-view-th-date,
+.elfinder .elfinder-cwd-wrapper-list table tbody tr td.elfinder-cwd-view-th-date {
+    /* width: 20%; */
+    width: 10%;
+    max-width: 160px;
+    min-width: 100px;
+    text-align: left;
+    vertical-align: middle;
+}
+.elfinder .elfinder-cwd-wrapper-list table tbody tr td.elfinder-cwd-view-th-date {
+    color: #747474 !important;
+    font-size: 10px;
+    line-height: 16px;
+    font-style: normal;
+    padding-top: 2px;
+    font-family: SegoeUI, sans-serif;
+    font-weight: 400;
+    border-left: none;
+}
+
+.elfinder .elfinder-cwd-wrapper-list table thead tr td.elfinder-cwd-view-th-size,
+.elfinder .elfinder-cwd-wrapper-list table tbody tr td.elfinder-cwd-view-th-size {
+    /* width: 10%; */
+    width: 8%;
+    max-width: 120px;
+    min-width: 90px;
+    text-align: left;
+    vertical-align: middle;
+}
+.elfinder .elfinder-cwd-wrapper-list table tbody tr td.elfinder-cwd-view-th-size {
+    font-size: 12px;
+    line-height: 21px;
+    color: #747474 !important;
+    font-family: SegoeUI, sans-serif;
+    font-weight: 400;
+    border-left: none;
+}
+
+.elfinder .elfinder-cwd-wrapper-list table thead tr td.elfinder-cwd-view-th-sharelink,
+.elfinder .elfinder-cwd-wrapper-list table tbody tr td.elfinder-cwd-view-th-sharelink {
+    /* width: 10%; */
+    width: 40px !important;
+    max-width: 40px;
+    min-width: 30px;
+    text-align: right;
+    vertical-align: middle;
+    /*padding-top: 15px;*/
+    border: none;
+}
+.elfinder .elfinder-cwd-wrapper-list table thead tr td.elfinder-cwd-view-th-sharebutton,
+.elfinder .elfinder-cwd-wrapper-list table tbody tr td.elfinder-cwd-view-th-sharebutton {
+    /* width: 20%; */
+    width: 120px !important;
+    max-width: 120px;
+    min-width: 120px;
+    text-align: left !important;
+    vertical-align: middle;
+    padding-left: 20px;
+    border: none;
+}
+.elfinder .elfinder-cwd-wrapper-list .elfinder-cwd-file .sharebutton {
+    display: none;
+    *margin-right: 10px;
+}
+.dropdown-share .dropdown-toggle {
+    -webkit-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    width: 50px;
+    height: 16px;
+    border: 1px solid #fc8f42;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    font-size: 10px;
+    line-height: 14px;
+    color: #fc8f42;
+    padding: 1px 0px 0px 12px;
+}
+.dropdown-share .dropdown-toggle:after {
+    position: absolute;
+    *top: 50%;
+    left: auto;
+    width: 8px;
+    height: 5px;
+    background-image: url(../../images/elfinder/icon-arrow-black.svg);
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    -webkit-transition: 0.3s transform;
+    -moz-transition: 0.3s transform;
+    -ms-transition: 0.3s transform;
+    -o-transition: 0.3s transform;
+    transition: 0.3s transform;
+    content: '';
+    right: 45px;
+    margin-top: 5px;
+    background-size: cover;
+}
+.dropdown-share-empty .dropdown-toggle:after {
+    display: none;
+}
+.dropdown-share .dropdown-menu {
+    width: 138px;
+    left: auto;
+    right: 0px;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1000;
+    display: none;
+    float: left;
+    *min-width: 150px;
+    padding: 2px 0px;
+    margin: 0px 0 0;
+    list-style: none;
+    font-size: 14px;
+    text-align: left;
+    background-color: #fff;
+    /*border: 1px solid rgba(0, 0, 0, 0.15);*/
+    border-radius: 4px;
+    /*
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    -moz-box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    */
+    background-clip: padding-box;
+    -webkit-box-shadow: 0 0 10px #aaaaaa;
+    -moz-box-shadow: 0 0 10px #aaaaaa;
+    box-shadow: 0 0 10px #aaaaaa;
+}
+.open > .dropdown-menu {
+    display: block;
+}
+.dropdown-share .dropdown-menu li span {
+    position: relative;
+    display: block;
+    text-align: right;
+    color: #4D4D4D;
+    font-size: 12px;
+    line-height: 18px;
+    height: 16px;
+    padding: 3px 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.dropdown-actions .dropdown-menu li:hover,
+.dropdown-share .dropdown-menu li:hover {
+    background-color: #dedddc;
+}
+
+.elfinder .elfinder-cwd-wrapper-list table thead tr td.elfinder-cwd-view-th-contmenu,
+.elfinder .elfinder-cwd-wrapper-list table tbody tr td.elfinder-cwd-view-th-contmenu {
+    width: 40px !important;
+    max-width: 40px;
+    min-width: 40px;
+    display: none;
+    padding: 5px 10px;
+}
+
+.elfinder .elfinder-cwd-wrapper-list table tbody tr td.elfinder-cwd-view-th-contmenu a,
+.elfinder .elfinder-cwd-wrapper-list table tbody tr td.elfinder-cwd-view-th-contmenu a:hover,
+.elfinder .elfinder-cwd-wrapper-list table tbody tr td.elfinder-cwd-view-th-contmenu a:visited
+.elfinder .elfinder-cwd-wrapper-list table tbody tr td.elfinder-cwd-view-th-contmenu a:active {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    background-image: url('../../images/elfinder/icon-context.png');
+    background-position: 0px 2px;
+    background-repeat: no-repeat;
+    width: 22px;
+    height: 25px;
+    background-size: contain;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media (max-width: 900px) {
+    .elfinder .elfinder-cwd-wrapper-list table thead tr td.elfinder-cwd-view-th-name,
+    .elfinder .elfinder-cwd-wrapper-list table tbody tr td.elfinder-cwd-view-th-name {
+        min-width: 100px;
+        width: 70% !important;
+        padding: 8px 2px;
+    }
+
+    .elfinder .elfinder-cwd-wrapper-list table thead tr td.elfinder-cwd-view-th-date,
+    .elfinder .elfinder-cwd-wrapper-list table tbody tr td.elfinder-cwd-view-th-date {
+        display: none !important;
+    }
+
+    .elfinder .elfinder-cwd-wrapper-list table thead tr td.elfinder-cwd-view-th-size,
+    .elfinder .elfinder-cwd-wrapper-list table tbody tr td.elfinder-cwd-view-th-size {
+        display: none !important;
+    }
+
+    .elfinder .elfinder-cwd-wrapper-list table thead tr td.elfinder-cwd-view-th-sharelink-,
+    .elfinder .elfinder-cwd-wrapper-list table tbody tr td.elfinder-cwd-view-th-sharelink- {
+        display: none !important;
+    }
+
+    .elfinder .elfinder-cwd-wrapper-list table thead tr td.elfinder-cwd-view-th-contmenu,
+    .elfinder .elfinder-cwd-wrapper-list table tbody tr td.elfinder-cwd-view-th-contmenu {
+        display: table-cell !important;
+    }
+
+    .elfinder .elfinder-cwd-wrapper-list table thead tr td.elfinder-cwd-view-th-sharebutton,
+    .elfinder .elfinder-cwd-wrapper-list table tbody tr td.elfinder-cwd-view-th-sharebutton{
+        display: none !important;
+    }
+}
+
+@media (max-width: 500px) {
+    .elfinder .elfinder-cwd-wrapper-list table thead tr td.elfinder-cwd-view-th-date-,
+    .elfinder .elfinder-cwd-wrapper-list table tbody tr td.elfinder-cwd-view-th-date- {
+        display: none !important;
+    }
+
+    .elfinder .elfinder-cwd-wrapper-list table thead tr td.elfinder-cwd-view-th-size-,
+    .elfinder .elfinder-cwd-wrapper-list table tbody tr td.elfinder-cwd-view-th-size- {
+        display: none !important;
+    }
+
+    .elfinder .elfinder-cwd-wrapper-list table thead tr td.elfinder-cwd-view-th-sharelink-,
+    .elfinder .elfinder-cwd-wrapper-list table tbody tr td.elfinder-cwd-view-th-sharelink- {
+        display: none !important;
+    }
+
+    .elfinder .elfinder-cwd-wrapper-list table thead tr td.elfinder-cwd-view-th-sharebutton-,
+    .elfinder .elfinder-cwd-wrapper-list table tbody tr td.elfinder-cwd-view-th-sharebutton- {
+        display: none !important;
+    }
+}
+
+/* Table heading icons (mainly the sorter) */
+.elfinder .elfinder-cwd-wrapper-list table tr td .ui-icon {
+    /* */
+}
+
+/* Table heading sorter up */
+.elfinder .elfinder-cwd-wrapper-list table tr.ui-state-default td .ui-icon-triangle-1-n:before {
+    /* */
+}
+
+/* Table heading sorter down */
+.elfinder .elfinder-cwd-wrapper-list table tr.ui-state-default td .ui-icon-triangle-1-s:before {
+    /* */
+}
+
+/* Files */
+/* File */
+.elfinder .elfinder-cwd-wrapper-list .elfinder-cwd-file td {
+    border: 1px solid transparent;
+}
+
+/*
+.elfinder .elfinder-cwd-wrapper-list .elfinder-cwd-file.num_pp_nechet {
+  background-color: #f7f7f7;
+}
+
+.elfinder .elfinder-cwd-wrapper-list .elfinder-cwd-file.num_pp_chet {
+  background-color: #ffffff;
+}
+:nth-child(2n + 1)
+*/
+
+.elfinder table tbody tr td {
+    background-color: unset;
+}
+.elfinder .elfinder-cwd-wrapper-list .elfinder-cwd-file:nth-child(2n + 1) {
+    background-color: #f7f7f7;
+}
+
+
+.elfinder .elfinder-cwd-wrapper-list .elfinder-cwd-file td:not(:first-child) {
+    color: #9d9d9d;
+}
+
+/* Filename */
+.elfinder .elfinder-cwd-wrapper-list .elfinder-cwd-file .elfinder-cwd-filename {
+    /* */
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    min-height: 21px;
+    font-size: 14px;
+    line-height: 21px;
+    color: #292929;
+    padding-left: 32px;
+    cursor: pointer;
+    font-family: SegoeUI, sans-serif;
+    font-weight: 400;
+    width: 18px !important;
+}
+
+.elfinder .elfinder-cwd-wrapper-list .elfinder-cwd-file.show-deleted td,
+.elfinder .elfinder-cwd-wrapper-list .elfinder-cwd-file.show-deleted .elfinder-cwd-filename
+{
+    color: #CCCCCC !important;
+}
+
+.elfinder .elfinder-cwd-wrapper-list .elfinder-cwd-file.hide-deleted td,
+.elfinder .elfinder-cwd-wrapper-list .elfinder-cwd-file.hide-deleted .elfinder-cwd-filename
+{
+    display: none !important;
+}
+
+
+/* Hovered file */
+
+.elfinder .elfinder-cwd-wrapper-list .elfinder-cwd-file:hover,
+.elfinder .elfinder-cwd-wrapper-list .elfinder-cwd-file.ui-state-hover,          /* fix for 2.x */
+.elfinder .elfinder-cwd-wrapper-list .elfinder-cwd-file.ui-state-hover:hover {   /* fix for 2.1 */
+    background: #e5f3ff;
+    border-color: #e5f3ff;
+    /*
+    -webkit-box-shadow: 0px 0px 0px 1px #c1c1c1 inset;
+    -moz-box-shadow: 0px 0px 0px 1px #c1c1c1 inset;
+    box-shadow: 0px 0px 0px 1px #c1c1c1 inset;
+    */
+    /*background-color: #f7f7f7;*/
+}
+
+.elfinder-cwd-view-th-sharebutton { width: 120px; min-width: 120px; text-align: center; }
+.elfinder-cwd-view-th-sharebutton .sharebutton { width: 100%; float: right; }
+.elfinder .elfinder-cwd-wrapper-list .elfinder-cwd-file input[type=button] { width: 120px; }
+.elfinder .elfinder-cwd-wrapper-list .elfinder-cwd-file .sharebutton { display: none; }
+.elfinder .elfinder-cwd-wrapper-list .elfinder-cwd-file:hover .sharebutton { display: block; }
+
+/* Selected file */
+.elfinder .elfinder-cwd-wrapper-list .elfinder-cwd-file.ui-selected,
+.elfinder .elfinder-cwd-wrapper-list .elfinder-cwd-file.ui-selected:hover {
+    background: #cce8ff;
+    /*background: #f0f0f0;*/
+}
+/*.elfinder .elfinder-cwd-wrapper-list .elfinder-cwd-file.ui-selected .sharebutton { display: block; }*/
+
+.elfinder .elfinder-cwd-wrapper-list .elfinder-cwd-file.ui-selected td {
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.elfinder .elfinder-cwd-wrapper-list .elfinder-has-checkbox .elfinder-cwd-file.ui-selected td {
+    border-top: 0px solid #f0f0f0;
+    border-bottom: 0px solid #f0f0f0;
+}
+
+.elfinder .elfinder-cwd-wrapper-list .elfinder-cwd-file.ui-selected td:first-child {
+    /*border-left: 1px solid #f0f0f0;*/
+}
+
+.elfinder .elfinder-cwd-wrapper-list .elfinder-cwd-file.ui-selected td:last-child {
+    /*border-right: 1px solid #f0f0f0;*/
+}
+
+/* Icons */
+.elfinder .elfinder-cwd-wrapper-list .elfinder-cwd-file .elfinder-cwd-icon {
+    /* */
+    width: 18px !important;
+    text-align: center;
+}
+
+/* collaborated dir */
+.elfinder .elfinder-cwd-wrapper-list .elfinder-cwd-file.shared_element .elfinder-cwd-icon-directory {
+    /*
+    width: 18px !important;
+    background-image: url('../../images/elfinder/16px/catalogFull.png') !important;
+    background-position: 0px center !important;
+    background-repeat: no-repeat !important;
+    background-size: 18px auto !important;
+    */
+}
+
+/* collaborated dir */
+.elfinder .elfinder-cwd-wrapper-list .elfinder-cwd-file.shared_element.collaborated_element .elfinder-cwd-icon-directory,
+.elfinder .elfinder-cwd-wrapper-list .elfinder-cwd-file.collaborated_element .elfinder-cwd-icon-directory {
+    width: 18px !important;
+    background-image: url('../../images/elfinder/16px/catalogFull.png') !important;
+    background-position: 0px center !important;
+    background-repeat: no-repeat !important;
+    background-size: 18px auto !important;
+}
+
+.elfinder .elfinder-cwd-wrapper-list .elfinder-cwd-file.shared_element .elfinder-cwd-icon {
+    /* background-color: #576CBD; */
+    width: 18px !important;
+}
+
+.elfinder .elfinder-cwd table td {
+    overflow: visible;
+}
+
+.elfinder-cwd-view-th-sharebutton {
+    overflow: visible;
+}
+
+.elfinder .elfinder-cwd-wrapper-list .elfinder-cwd-file.not_synced td,
+.elfinder .elfinder-cwd-wrapper-list .elfinder-cwd-file.not_synced .elfinder-cwd-filename
+{
+    color: #999999 !important;
+}
+.elfinder-touch .elfinder-cwd tr.elfinder-cwd-file td,
+.elfinder-touch .elfinder-cwd tr td {
+    padding: 8px 12px;
+}
+.elfinder .elfinder-cwd-wrapper-list table tbody tr td.elfinder-cwd-view-th-name {
+    padding: 8px 8px;
+}
+.elfinder-touch tr.elfinder-cwd-file td .elfinder-cwd-select {
+    padding-top: 5px;
+}
+
+.elfinder-touch .elfinder-navbar-dir {
+    padding: 5px 12px 6px 12px;
+}
+
+.elfinder-ltr .elfinder-workzone .elfinder-cwd-selectall {
+    text-align: right;
+    right: 0px;
+    left: auto;
+    top: 0px;
+    padding: 0px;
+    margin: 0px;
+    line-height: 0;
+    width: auto;
+    height: auto;
+}
+
+.elfinder-ltr .elfinder-workzone .elfinder-cwd-selectall input[type=checkbox] {
+    margin: 0px 0px 0px 0px
+}
+
+/*
+.elfinder-cwd-file-wrapper {
+  white-space: nowrap !important; /* Отменяем перенос текста * /
+  overflow: hidden !important; /* Обрезаем содержимое * /
+  position: relative !important; /* Относительное позиционирование * /
+  text-overflow: ellipsis !important; /* Многоточие * /
+  padding: 0 5px 0px 0px;
+}
+*/
+
+.elfinder .elfinder-cwd-wrapper-list .elfinder-cwd-file .elfinder-cwd-filename {
+    text-align: left;
+    text-overflow: ellipsis !important;
+    /*text-overflow: " ..." !important;*/
+    overflow: hidden !important;
+    min-width: 150px;
+    white-space: nowrap;
+}
+.elfinder .elfinder-cwd-wrapper-list .elfinder-cwd-file .elfinder-cwd-filename textarea {
+    width: 97% !important;
+    height: 20px;
+    padding: 2px;
+}
+
+.elfinder .elfinder-cwd table td {
+    white-space: pre-line;
+}
+
+.elfinder .elfinder-contextmenu-sub,
+.elfinder .elfinder-contextmenu {
+    border-radius: 4px;
+    border: 0px solid #aaa;
+    -webkit-box-shadow: 0 0 10px #aaaaaa;
+    -moz-box-shadow: 0 0 10px #aaaaaa;
+    box-shadow: 0 0 10px #aaaaaa;
+}

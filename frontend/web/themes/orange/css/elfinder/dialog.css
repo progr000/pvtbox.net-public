@@ -1,0 +1,249 @@
+/* dialog.css */
+/* Dialog wrapper */
+.elfinder .elfinder-dialog {
+  /* */
+  border: 1px solid #b5b5b5;
+  box-shadow: 0 0 10px #aaaaaa;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+/* Dialog title */
+.ui-dialog-titlebar,
+.elfinder .elfinder-dialog .ui-dialog-titlebar {
+  padding: 1px 0 3px 6px;
+  height: 20px;
+  font-size: 12px;
+  box-sizing: border-box;
+  background: none !important;
+  background-color: #f1f1f1 !important;
+  -moz-border-radius: 3px 3px 0px 0px;
+  -webkit-border-radius: 3px 3px 0px 0px;
+  border-radius: 3px 3px 0px 0px;
+}
+
+/* Close button */
+.ui-dialog-titlebar-close,
+.elfinder .elfinder-dialog .ui-dialog-titlebar-close {
+  background: url('../../images/elfinder/close2.png');
+  right: 0;
+  border-radius: 0;
+  margin-top: -9px;
+  webkit-transition: background 0.3s; /* Safari */
+  transition: background-image 0.3s;
+  height: 19px;
+  width: 45px;
+}
+
+.elfinder .elfinder-dialog .ui-dialog-titlebar-close:hover {
+  /*background: url('../../images/elfinder/close-hover.png');*/
+}
+
+.ui-dialog-titlebar-minimize2,
+.elfinder .elfinder-dialog .ui-dialog-titlebar-minimize2 {
+  background: url('../../images/elfinder/close2.png');
+  /*background-image: url("http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/images/ui-icons_222222_256x240.png");*/
+  right: 0;
+  border-radius: 0;
+  margin-top: -9px;
+  webkit-transition: background 0.3s;
+  transition: background-image 0.3s;
+  height: 19px;
+  width: 45px;
+}
+.elfinder .elfinder-dialog .ui-dialog-titlebar-minimize2:hover {
+  /*background: url('../../images/elfinder/close-hover.png');*/
+}
+
+/* Dialog content */
+.elfinder .elfinder-dialog .ui-dialog-content {
+  /* */
+}
+
+/* Tabs */
+/* Tabs wrapper */
+.elfinder .elfinder-dialog .ui-tabs-nav {
+  /* */
+}
+
+/* Normal tab */
+.elfinder .elfinder-dialog .ui-tabs-nav .ui-state-default {
+  /* */
+}
+
+/* Current tab */
+.elfinder .elfinder-dialog .ui-tabs-nav .ui-tabs-selected {
+  /* */
+}
+
+/* Active tab */
+.elfinder .elfinder-dialog .ui-tabs-nav li:active {
+  /* */
+}
+
+/* Icons */
+/* Dialog icon (e.g. for error messages) */
+.elfinder .elfinder-dialog .elfinder-dialog-icon {
+  /* */
+}
+.elfinder-dialog-icon-open,
+.elfinder-dialog-icon-readdir,
+.elfinder-dialog-icon-reload {
+  background-image: url('../../images/elfinder/48px/catalog.png') !important;
+  background-position: center center;
+  background-repeat: no-repeat !important;
+  background-size: 32px auto !important;
+  width: 32px;
+  height: 32px;
+}
+
+/* Error icon */
+.elfinder .elfinder-dialog .elfinder-dialog-icon-error {
+  /* */
+}
+
+/* Confirmation icon */
+.elfinder .elfinder-dialog .elfinder-dialog-icon-confirm {
+  /* */
+}
+
+/* Footer */
+.elfinder .elfinder-dialog .ui-dialog-buttonpane {
+  /* */
+}
+
+/* Buttonset (wrapper) */
+.elfinder .elfinder-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {
+  /* */
+}
+
+/* Button */
+.elfinder .elfinder-dialog .ui-dialog-buttonpane .ui-dialog-buttonset .ui-button {
+  /* */
+  border: 1px solid #d3d3d3;
+  background: #f1f1f1;
+  font-weight: normal;
+  color: #555555;
+}
+.elfinder .elfinder-dialog .ui-dialog-buttonpane .ui-dialog-buttonset .ui-button.ui-state-hover {
+  /* */
+  background: #e6e6e6 !important;
+}
+
+/* Styling specific types of dialogs */
+/* Error */
+.elfinder .elfinder-dialog-error {
+  /* */
+}
+
+/* Confirm */
+.elfinder .elfinder-dialog-confirm {
+  /* */
+}
+
+/* File editing */
+.elfinder .elfinder-dialog .elfinder-file-edit {
+  /* */
+}
+
+/* File information */
+/* Title */
+.elfinder .elfinder-dialog .elfinder-info-title {
+  /* */
+}
+
+/* Table */
+.elfinder .elfinder-dialog .elfinder-info-tb {
+  /* */
+}
+
+/* File upload (including dropbox) */
+.elfinder .elfinder-dialog .elfinder-upload-dropbox,
+.elfinder .elfinder-dialog .elfinder-upload-dialog-or {
+  /* */
+}
+
+
+/* Upload dialog  */
+.progress-upload {
+  height: 8px !important;
+  margin-bottom: 10px;
+  margin-right: 5px;
+  width: 180px;
+  display: inline-block;
+  margin-top: 8px;
+}
+.btn-cancel-upload,
+.btn-cancel-rtc-download,
+.btn-pause-rtc-download {
+  display: inline;
+  height: 20px !important;
+  padding: 0px 5px 0px 5px !important;
+  min-width: 10px !important;
+  background-image: none !important;
+  line-height: 0px !important;
+}
+#total-progress {
+  height: 10px;
+  margin: 5px;
+}
+#download-total-progress {
+  height: 10px;
+  margin: 5px;
+}
+#total-progress-download-rtc {
+  height: 10px;
+  margin: 5px;
+}
+.prepare-download-text {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 12px;
+  color: #aaaaaa;
+  text-align: center;
+}
+.ui-dialog-titlebar-min {
+  background: url('../../images/elfinder/minimize2.png');
+  right: 0;
+  border-radius: 0;
+  transition: background-image 0.3s;
+  height: 19px;
+  width: 20px;
+  margin-top: -3px;
+  left: 215px;
+}
+.ui-dialog-titlebar-close2 {
+  background: url('../../images/elfinder/close3.png');
+  right: 0;
+  border-radius: 0;
+  transition: background-image 0.3s;
+  height: 19px;
+  width: 20px;
+  margin-top: -3px;
+  left: 210px;
+}
+.ui-dialog-titlebar-close3 {
+  background: url('../../images/elfinder/close3.png');
+  right: 0;
+  border-radius: 0;
+  transition: background-image 0.3s;
+  height: 19px;
+  width: 20px;
+  margin-top: -3px;
+  left: 240px;
+}
+.ui-dialog-titlebar-close4 {
+  background: url('../../images/elfinder/close3.png');
+  right: 0;
+  border-radius: 0;
+  transition: background-image 0.3s;
+  height: 19px;
+  width: 20px;
+  margin-top: -3px;
+  left: 240px;
+}
+#upload-dialog .file-info {
+  text-align:left;
+  padding-left: 10px;
+}

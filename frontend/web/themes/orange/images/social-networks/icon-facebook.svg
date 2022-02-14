@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="9px" height="21px" viewBox="0 0 9 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>facebook-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="main" transform="translate(-962.000000, -2182.000000)" fill="#424242">
+            <g id="Group-25" transform="translate(0.000000, 2110.000000)">
+                <g id="facebook-icon" transform="translate(951.000000, 67.000000)">
+                    <g id="Layer_1">
+                        <path d="M13.0500918,12.1361367 L11.0148691,12.1361367 L11.0148691,15.4584043 L13.0500918,15.4584043 L13.0500918,25.2177734 L16.9638418,25.2177734 L16.9638418,15.4168691 L19.6943848,15.4168691 L19.9851309,12.1361367 L16.9639023,12.1361367 L16.9639023,10.2673574 C16.9639023,9.49381055 17.1196895,9.18756445 17.8672012,9.18756445 L19.9850703,9.18756445 L19.9850703,5.78222656 L17.2753555,5.78222656 C14.3631719,5.78222656 13.0501523,7.06436719 13.0501523,9.5198457 C13.0500918,11.6584824 13.0500918,12.1361367 13.0500918,12.1361367 Z" id="facebook-icon"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

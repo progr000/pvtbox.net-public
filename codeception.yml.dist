@@ -1,0 +1,20 @@
+# https://klisl.com/codeception_structure.html
+include:
+  - frontend
+  - backend
+  - common
+paths:
+  log: tests/log
+settings:
+  colors: true
+
+#paths:
+#    tests: tests
+#    output: tests/_output
+#    data: tests/_data
+#    support: tests/_support
+#    envs: tests/_envs
+#actor_suffix: Tester
+#extensions:
+#    enabled:
+#        - Codeception\Extension\RunFailed

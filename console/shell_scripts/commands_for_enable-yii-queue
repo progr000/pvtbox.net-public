@@ -1,0 +1,23 @@
+root@progr-X556UQK:/etc/systemd/system/multi-user.target.wants# systemctl disable yii-queue@.service 
+Removed /etc/systemd/system/multi-user.target.wants/yii-queue@1.service.
+Removed /etc/systemd/system/multi-user.target.wants/yii-queue@2.service.
+root@progr-X556UQK:/etc/systemd/system/multi-user.target.wants# systemctl enable yii-queue@1.service 
+Created symlink /etc/systemd/system/multi-user.target.wants/yii-queue@1.service → /etc/systemd/system/yii-queue@.service.
+root@progr-X556UQK:/etc/systemd/system/multi-user.target.wants# 
+
+
+root@progr-X556UQK:/etc/systemd/system/multi-user.target.wants# systemctl stop yii-queue@1
+root@progr-X556UQK:/etc/systemd/system/multi-user.target.wants# ps aux | grep queue
+root       468  0.0  0.0      0     0 ?        S<   Фев05   0:00 [led_workqueue]
+root     17788  0.0  0.0  15576  1076 pts/5    S+   01:20   0:00 grep --color=auto queue
+root@progr-X556UQK:/etc/systemd/system/multi-user.target.wants# systemctl start yii-queue@1
+root@progr-X556UQK:/etc/systemd/system/multi-user.target.wants# ps aux | grep queue
+root       468  0.0  0.0      0     0 ?        S<   Фев05   0:00 [led_workqueue]
+www-data 17856  3.0  0.3 324208 28080 ?        Ss   01:20   0:00 /usr/bin/php /var/www/Direct-link/yii queue/listen --verbose=1
+root     17863  0.0  0.0  15576   972 pts/5    S+   01:20   0:00 grep --color=auto queue
+root@progr-X556UQK:/etc/systemd/system/multi-user.target.wants# systemctl stop yii-queue@*
+root@progr-X556UQK:/etc/systemd/system/multi-user.target.wants# ps aux | grep queue
+root       468  0.0  0.0      0     0 ?        S<   Фев05   0:00 [led_workqueue]
+root     17901  0.0  0.0  15576  1176 pts/5    S+   01:21   0:00 grep --color=auto queue
+root@progr-X556UQK:/etc/systemd/system/multi-user.target.wants# systemctl start yii-queue@*
+

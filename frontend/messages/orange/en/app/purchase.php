@@ -1,0 +1,38 @@
+<?php
+return [
+    'title'                         => "Purchase",
+    'already_initialized'           => "You have already initialized some payment, wait until it is completed",
+    'You_are_already_init_license_buy' => "You have already initialized the purchase of a license, wait until the transaction is completed",
+    'You_are_already_buy_license'   => "You already bought {license_type} license",
+    'Renew'                         => "Renew",
+    'License_amount'                => "License amount - {count}",
+    'Account_type'                  => "Account type:",
+    'You_account_type'              => "You account type:",
+    'Purchase_button'               => "Purchase",
+    'Return'                        => "Return",
+
+    'ERROR_BUSINESS_USER'           => "Business User can't change license to another, while Business Admin is pay for it license. ",
+    'ERROR_CANT_DOWNGRADE'          => "Can't downgrade license type. ",
+    'ERROR_ALREADY_PRO'             => "You are already at {license_professional}.",
+    'ERROR_PERIOD_MISMATCH'         => "You can't change license period.",
+    'ERROR_SUCCESS'                 => "Successful change license.",
+
+    'Total'                         => "Total",
+    'licenses'                      => "licenses",
+    'server_licenses'               => "server licenses",
+    'annually'                      => "annually",
+    'monthly'                       => "monthly",
+    'BuyNow'                        => "Buy Now",
+    'Subscribe'                     => "Subscribe",
+
+    'PayPal'                        => "PayPal",
+    'Other'                         => "Other",
+    'Monthly'                       => "Monthly",
+    'Annually'                      => "Annually",
+    'Save'                          => "Save",
+    'How_would_you_like_to_pay'     => "How would you like to pay?",
+    'How_long_billing_period'       => "How long do you want your billing period to be?",
+    'By_clicking_BuyNow'            => "By clicking \"Buy Now\" you will be proceed to secured billing page.",
+    'By_clicking_Subscribe'         => "By clicking \"Subscribe\" you will be proceed to secured billing page.",
+    'You_buy_licenses_less'         => "You buy licenses less than you bought before. Some of the collaborators will automatically lose their licenses and automatically leave the collaboration. In order to avoid this, you can buy as many licenses as you had before, or manually remove a part of your colleagues to avoid random selection.",
+];

@@ -1,0 +1,6 @@
+find . -type d -exec chmod 0755 {} \;
+find . -type f -exec chmod 0644 {} \;
+
+
+/usr/bin/php /var/www/Direct-link/yii queue/listen --verbose=1
+/usr/bin/php /var/www/Direct-link/yii queue/run --verbose=1

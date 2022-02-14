@@ -1,0 +1,349 @@
+[03.09.2019 11:36:29] <jabber> gitlab pass  ->   lSXqCfP234@!CBzh
+[03.09.2019 11:37:20] <jabber> ssh-keygen -t rsa -b 4096 -C "progr@bymix.biz"
+
+при генерации поле пароль оставлять пустым
+[03.09.2019 11:39:02] <progr> приват кей тебе сюда скинуть?
+[03.09.2019 11:39:32] <progr> тот что сгенерился
+[03.09.2019 11:39:55] <jabber> нет, скинь то чт ос расширением .pub
+[03.09.2019 11:40:20] <jabber> cat ~/.ssh/*.pub
+[03.09.2019 11:40:34] <progr> ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDBH9aVsUzDUKQd9G8PCaAvXecct+gsWA6C46fiZn8M5hS7FrYqljD2eU3voN4KNxILw4do8KjN24f8JdW7jy6MHHSYCfCSMXODK/00nhdmcQUutN5cXwQ8slj8dycUe/VLP+f07O5udGcJhno6NDgeExDGcpdxnWRKOb74BnXKPcBap5PUcTO4lFH0HpbiXp92RrmILId4Kn26VfElkWGej/HmHjgWzE9dCGi4oJh+6WkJqwUaIJ8DyILgGL2vSGE4VUwmUYcTdTPtMDfKOQjrHyqk6xBjdykccgJRAiJfaHXFtz0f4qP+/449+i1Fjx7MKsVC+DQYV/lphyLoi5wrRK3tPQXNhgB1384PY6quh0Jni9T+TYVAj4mNqnKYuEVJscmS0VmcmDQilROj1CMRdLipdjFaW7sqnbMJlhbHZVwm2zTR+uHfzUzVMpO8Ompx0ahCNPNDxvcWShK5TbPzSgHlnIGqmJzLdL5NZF0hTbj6aorgUWR2F9tpY4z4T39rm2vee0MTM/Is6dySNjJjtsAVRlaUjCMxXjjujYtPoRLp6q/ZgA/6vBmxyaJOdoTt4W7H0vKiBsquVoz1DYoqWg7/mJuvvQRWcoCHgonlJZ/yxRT+wBqPmF48zGFbkcjzZSyobVDc4XlemiyHg9NDZrOKxE6qZUfEfL6q/sL2Bw== progr@bymix.biz
+
+[03.09.2019 11:40:58] <progr> и как мне прописать теперь ссш конект
+[03.09.2019 11:44:30] <jabber> ssh progr@pvtbox.net -p 22789
+[03.09.2019 11:45:13] <progr> ssh progr@pvtbox.net -p 22789
+The authenticity of host '[pvtbox.net]:22789 ([89.39.105.85]:22789)' can't be established.
+ECDSA key fingerprint is SHA256:QIvP8OijIdHa97yIeZOfALzu2Fac317wsczk4/qohWs.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added '[pvtbox.net]:22789,[89.39.105.85]:22789' (ECDSA) to the list of known hosts.
+progr@pvtbox.net's password: 
+[03.09.2019 11:45:54] <progr> надо путь к ключу где то7
+[03.09.2019 11:46:30] <jabber> ssh progr@pvtbox.net -v -p 22789
+[03.09.2019 11:46:32] <jabber> так сделай
+[03.09.2019 11:46:36] <progr> ssh progr@pvtbox.net -p 22789 -i /home/progr/.ssh/pvtbox.ssh.key
+[03.09.2019 11:46:37] <jabber> и скинь мне весь вывод
+[03.09.2019 11:46:43] <progr> вот так зашло
+[03.09.2019 11:46:47] <progr> без пароля
+[03.09.2019 11:46:58] <jabber> /home/progr/.ssh/pvtbox.ssh.key  // это значит ты ввел не стандартное имя
+[03.09.2019 11:47:10] <progr> а как правильно сделать?
+[03.09.2019 11:47:14] <jabber> id_rsa если быб былото можно без -i вводить команду ссш и будет конектица
+[03.09.2019 11:47:33] <jabber> ну как ты тоже правильно просто с опцией -i теперь надо вводить
+[03.09.2019 11:47:41] <progr> а что бы без нее?
+[03.09.2019 11:47:52] <progr> нужно переименовать ключ?
+[03.09.2019 11:47:54] <jabber> сp /home/progr/.ssh/pvtbox.ssh.key  /home/progr/.ssh/id_rsa
+[03.09.2019 11:48:05] <jabber> да
+[03.09.2019 11:50:39] <progr> не пойму
+[03.09.2019 11:50:45] <progr> а если например еще один сервер
+[03.09.2019 11:50:56] <progr> то ид рса уже не такой
+[03.09.2019 11:50:58] <jabber> ну просто паб ключ кладешь ан сервер и все
+[03.09.2019 11:51:17] <jabber> приват ключ один, паб раздаешь направо и налево
+[03.09.2019 11:51:18] <progr> он одинаковый для всех
+[03.09.2019 11:51:20] <progr> ?
+[03.09.2019 11:51:30] <jabber> и подключаешься с помощью приват ключу туда где втои паб ключи лежат
+[03.09.2019 11:51:47] <progr> ага понял
+
+[03.09.2019 11:51:52] <progr> теперь второй момент
+[03.09.2019 11:51:59] <progr> https://git.2nat.biz/users/sign_in
+[03.09.2019 11:52:03] <progr> что мне тут вводить
+[03.09.2019 11:52:15] <jabber> [11:40:25] <Jabber> gitlab pass  ->   lSXqCfP234@!CBzh
+[03.09.2019 11:52:17] <jabber> пароль
+[03.09.2019 11:52:20] <jabber> юзер тот же
+[03.09.2019 11:52:21] <progr> а имя
+[03.09.2019 11:53:01] <jabber> progr
+progr000@gmail.com 
+[03.09.2019 11:53:06] <jabber> либо первое либо второе
+[03.09.2019 11:53:11] <jabber> попробуй с первым сначала
+[03.09.2019 11:54:08] <progr> не пустило
+[03.09.2019 11:54:11] <progr> ни так ни так
+[03.09.2019 11:54:30] <progr> а сек
+[03.09.2019 11:54:51] <progr> вошел
+[03.09.2019 11:55:07] <jabber> Set up new password
+
+Please set a new password before proceeding.
+After a successful password update you will be redirected to login screen.
+Current password
+
+[03.09.2019 11:55:11] <jabber> у теб такое окно должно быть
+[03.09.2019 11:55:36] <progr> да
+[03.09.2019 11:55:38] <progr> ок
+[03.09.2019 11:55:42] <progr> тперь такой вопрос
+[03.09.2019 11:55:43] <jabber> ок
+[03.09.2019 11:55:47] <progr> как настроить
+[03.09.2019 11:55:55] <progr> что бы гит качался по ссш ключу
+[03.09.2019 11:55:58] <progr> работал*
+[03.09.2019 11:56:09] <progr> не нужно было имя и пароль вводить в консоли
+[03.09.2019 11:56:09] <jabber> добавть свой паб ключ
+[03.09.2019 11:56:31] <jabber> https://git.2nat.biz/admin/users/progr/keys
+[03.09.2019 11:56:41] <jabber> не знаю передается ли бете этот путь, я с админа зашел
+[03.09.2019 11:57:12] <jabber> https://git.2nat.biz/profile/keys
+[03.09.2019 11:57:16] <jabber> вот у тебя путь
+[03.09.2019 11:57:33] <jabber> Add an SSH key
+
+To add an SSH key you need to generate one or use an existing key.
+Key
+
+Paste your public SSH key, which is usually contained in the file '~/.ssh/id_rsa.pub' and begins with 'ssh-rsa'. Don't use your private SSH key.
+[03.09.2019 11:58:17] <progr> сюда тот
+[03.09.2019 11:58:23] <progr> который я тебе скинул
+[03.09.2019 11:58:31] <jabber> да
+[03.09.2019 11:58:39] <progr> в таком виде 
+
+
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDBH9aVsUzDUKQd9G8PCaAvXecct+gsWA6C46fiZn8M5hS7FrYqljD2eU3voN4KNxILw4do8KjN24f8JdW7jy6MHHSYCfCSMXODK/00nhdmcQUutN5cXwQ8slj8dycUe/VLP+f07O5udGcJhno6NDgeExDGcpdxnWRKOb74BnXKPcBap5PUcTO4lFH0HpbiXp92RrmILId4Kn26VfElkWGej/HmHjgWzE9dCGi4oJh+6WkJqwUaIJ8DyILgGL2vSGE4VUwmUYcTdTPtMDfKOQjrHyqk6xBjdykccgJRAiJfaHXFtz0f4qP+/449+i1Fjx7MKsVC+DQYV/lphyLoi5wrRK3tPQXNhgB1384PY6quh0Jni9T+TYVAj4mNqnKYuEVJscmS0VmcmDQilROj1CMRdLipdjFaW7sqnbMJlhbHZVwm2zTR+uHfzUzVMpO8Ompx0ahCNPNDxvcWShK5TbPzSgHlnIGqmJzLdL5NZF0hTbj6aorgUWR2F9tpY4z4T39rm2vee0MTM/Is6dySNjJjtsAVRlaUjCMxXjjujYtPoRLp6q/ZgA/6vBmxyaJOdoTt4W7H0vKiBsquVoz1DYoqWg7/mJuvvQRWcoCHgonlJZ/yxRT+wBqPmF48zGFbkcjzZSyobVDc4XlemiyHg9NDZrOKxE6qZUfEfL6q/sL2Bw== progr@bymix.biz
+[03.09.2019 11:58:41] <progr> ?
+[03.09.2019 11:58:52] <jabber> да
+[03.09.2019 11:58:58] <progr> есть
+[03.09.2019 11:59:00] <jabber> потом с консоли ssh -T git@gitlab.com
+[03.09.2019 11:59:39] <progr> progr@pvtbox:~$ ssh -T git@gitlab.com
+The authenticity of host 'gitlab.com (35.231.145.151)' can't be established.
+ECDSA key fingerprint is SHA256:HbW3g8zUjNSksFbqTiUWPWg2Bq1x8xdGUrliXFzSnUw.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added 'gitlab.com,35.231.145.151' (ECDSA) to the list of known hosts.
+Permission denied (publickey).
+
+[03.09.2019 12:00:04] <jabber> ssh -T git@git.2nat.biz
+[03.09.2019 12:00:10] <jabber> наш гит надо было указать
+[03.09.2019 12:00:44] <progr> а пароль просит
+[03.09.2019 12:01:41] <jabber> ssh -vT git@git.2nat.biz
+[03.09.2019 12:01:44] <progr> progr@pvtbox:~$ ssh -T git@git.2nat.biz
+The authenticity of host 'git.2nat.biz (178.132.3.217)' can't be established.
+ECDSA key fingerprint is SHA256:0nP2FvpQo6Be1tmGrHPgGv+5zyrx+E0x8Olg/CEgGfU.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added 'git.2nat.biz,178.132.3.217' (ECDSA) to the list of known hosts.
+git@git.2nat.biz's password: 
+[03.09.2019 12:01:54] <jabber> ssh -vT git@git.2nat.biz
+[03.09.2019 12:01:58] <jabber> так сделай
+[03.09.2019 12:02:23] <progr> progr@pvtbox:~$ ssh -vT git@git.2nat.biz
+OpenSSH_7.4p1 Debian-10, OpenSSL 1.0.2l  25 May 2017
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug1: /etc/ssh/ssh_config line 19: Applying options for *
+debug1: Connecting to git.2nat.biz [178.132.3.217] port 22.
+debug1: Connection established.
+debug1: identity file /home/progr/.ssh/id_rsa type 1
+debug1: key_load_public: No such file or directory
+debug1: identity file /home/progr/.ssh/id_rsa-cert type -1
+debug1: key_load_public: No such file or directory
+debug1: identity file /home/progr/.ssh/id_dsa type -1
+debug1: key_load_public: No such file or directory
+debug1: identity file /home/progr/.ssh/id_dsa-cert type -1
+debug1: key_load_public: No such file or directory
+debug1: identity file /home/progr/.ssh/id_ecdsa type -1
+debug1: key_load_public: No such file or directory
+debug1: identity file /home/progr/.ssh/id_ecdsa-cert type -1
+debug1: key_load_public: No such file or directory
+debug1: identity file /home/progr/.ssh/id_ed25519 type -1
+debug1: key_load_public: No such file or directory
+debug1: identity file /home/progr/.ssh/id_ed25519-cert type -1
+debug1: Enabling compatibility mode for protocol 2.0
+debug1: Local version string SSH-2.0-OpenSSH_7.4p1 Debian-10
+debug1: Remote protocol version 2.0, remote software version OpenSSH_7.4p1 Debian-10+deb9u5
+debug1: match: OpenSSH_7.4p1 Debian-10+deb9u5 pat OpenSSH* compat 0x04000000
+debug1: Authenticating to git.2nat.biz:22 as 'git'
+debug1: SSH2_MSG_KEXINIT sent
+debug1: SSH2_MSG_KEXINIT received
+debug1: kex: algorithm: curve25519-sha256
+debug1: kex: host key algorithm: ecdsa-sha2-nistp256
+debug1: kex: server->client cipher: chacha20-poly1305@openssh.com MAC: <implicit> compression: none
+debug1: kex: client->server cipher: chacha20-poly1305@openssh.com MAC: <implicit> compression: none
+debug1: expecting SSH2_MSG_KEX_ECDH_REPLY
+debug1: Server host key: ecdsa-sha2-nistp256 SHA256:0nP2FvpQo6Be1tmGrHPgGv+5zyrx+E0x8Olg/CEgGfU
+debug1: Host 'git.2nat.biz' is known and matches the ECDSA host key.
+debug1: Found key in /home/progr/.ssh/known_hosts:4
+debug1: rekey after 134217728 blocks
+debug1: SSH2_MSG_NEWKEYS sent
+debug1: expecting SSH2_MSG_NEWKEYS
+debug1: SSH2_MSG_NEWKEYS received
+debug1: rekey after 134217728 blocks
+debug1: SSH2_MSG_EXT_INFO received
+debug1: kex_input_ext_info: server-sig-algs=<ssh-ed25519,ssh-rsa,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521>
+debug1: SSH2_MSG_SERVICE_ACCEPT received
+debug1: Authentications that can continue: publickey,password
+debug1: Next authentication method: publickey
+debug1: Offering RSA public key: /home/progr/.ssh/id_rsa
+debug1: Authentications that can continue: publickey,password
+debug1: Trying private key: /home/progr/.ssh/id_dsa
+debug1: Trying private key: /home/progr/.ssh/id_ecdsa
+debug1: Trying private key: /home/progr/.ssh/id_ed25519
+debug1: Next authentication method: password
+
+[03.09.2019 12:03:00] <jabber> debug1: identity file /home/progr/.ssh/id_rsa type 1
+debug1: key_load_public: No such file or directory
+[03.09.2019 12:03:03] <jabber> где приватный ключ лежит?
+[03.09.2019 12:03:38] <progr> ой
+[03.09.2019 12:03:43] <progr> это я на сервере сделал
+[03.09.2019 12:03:47] <progr> на пвтбокс
+[03.09.2019 12:03:52] <progr> протупил
+[03.09.2019 12:04:38] <progr> есть
+[03.09.2019 12:04:46] <progr> написало велкам
+[03.09.2019 12:04:48] <jabber> ок
+[03.09.2019 12:04:53] <jabber> значит все работает
+[03.09.2019 12:05:23] <progr> progr@progr-HP:~/tmp/www/Direct-link$ git pull                                                                                                                                        
+Username for 'https://git.2nat.biz':                                                                                                                                                  
+                                    
+[03.09.2019 12:05:33] <progr> не работает
+[03.09.2019 12:10:56] <progr> нужно через гит да?
+[03.09.2019 12:10:58] <jabber> что в git config?
+[03.09.2019 12:11:03] <progr> через шттпс это не то
+[03.09.2019 12:11:12] <jabber> да
+[03.09.2019 12:11:19] <progr> пошло
+[03.09.2019 12:11:30] <jabber> кка ты сделал?
+[03.09.2019 12:11:32] <progr> git clone git@git.2nat.biz:PHP/Direct-link.git
+[03.09.2019 12:11:48] <progr> заново клонирую
+[03.09.2019 12:11:59] <jabber> а скорее всего лцчше git clone progr@git.2nat.biz:PHP/Direct-link.git
+[03.09.2019 12:12:09] <jabber> вместо юзера git писать своего юзера
+[03.09.2019 12:12:11] <jabber> progr
+[03.09.2019 12:12:13] <progr> аа
+[03.09.2019 12:12:40] <progr> а как мне настроить на сервере такое?
+[03.09.2019 12:12:42] <jabber> но все равно оно тебя идентит как прогр
+[03.09.2019 12:12:49] <progr> там есть проект этот
+[03.09.2019 12:12:58] <jabber> progr@pvtbox:~/.ssh$ pwd
+/home/progr/.ssh
+progr@pvtbox:~/.ssh$
+
+[03.09.2019 12:13:01] <progr> но он через шттпс был клонирован
+[03.09.2019 12:13:02] <jabber> там уже есть ключи
+[03.09.2019 12:13:14] <jabber> прост одобавь из pub  в гит свой акк
+[03.09.2019 12:13:30] <progr> не понял
+[03.09.2019 12:13:49] <jabber> заходишь на сервер
+[03.09.2019 12:14:00] <jabber> заходишь по пути /home/progr/.ssh
+[03.09.2019 12:14:26] <jabber> видишь там два файла, id_rsa  id_rsa.pub
+cat id_rsa.pub
+[03.09.2019 12:15:13] <progr> ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDMEKFi7dinzJTMWqw8EjV3dfkgsCpqt3lEZRbMc6rEnxQX5FOe8KE1hl78ByhLMgWcfdunJ7BcdKXlhQ3/ELix/nBPtyxQGTNrYvssLUugfBc8d3S0tjyOqGAPe6ipDrwLhQPiDPJYOH4QszaV2wf51kQoh1Mz09daBSocG7nOM/ydRkVn+YLe6zC5HN/rzFHbTjYjtcFLJSpK0KN0UyeiIyrwsrONPcwrfeHjmOBD9dxqdTkDwIsoH39eFAoJrywU3M+yY2MRgx2wGC7sYD3cMdDmL4vfpmcKV3wI9O2L9JrOwZhiBUgdIf+/Osb2vdtpwekjBjho/GsmTEGdHVon progr000@gmail.com
+[03.09.2019 12:15:19] <jabber> зхощишь на гитлаб 'https://git.2nat.biz':                                                                                                                                                  
+через свой акк, добавляешь все что cat id_rsa.pub
+[03.09.2019 12:15:22] <jabber> все так же 
+[03.09.2019 12:15:26] <jabber> да
+[03.09.2019 12:16:16] <progr> добавил
+[03.09.2019 12:16:20] <progr> теперь смотри
+[03.09.2019 12:16:23] <progr> вопрос в чем
+[03.09.2019 12:16:28] <progr> есть проджект
+[03.09.2019 12:16:31] <progr> в папке
+[03.09.2019 12:16:44] <progr> но он был клонирован и на нем сейчас домен висит рабочий
+[03.09.2019 12:16:52] <progr> по шттпс был клонирован
+[03.09.2019 12:17:01] <jabber> что за домен?
+[03.09.2019 12:17:04] <jabber> не понимаю про домен
+[03.09.2019 12:17:08] <progr> pvtbox.net
+[03.09.2019 12:17:09] <jabber> что не так с доменом
+[03.09.2019 12:17:11] <jabber> ну
+[03.09.2019 12:17:20] <progr> ghjtrn rkjybhjfy ,sk lfdyj
+[03.09.2019 12:17:22] <progr> gj inngc
+[03.09.2019 12:17:28] <progr> проект был давно клонирован
+[03.09.2019 12:17:32] <progr> по шттпс
+[03.09.2019 12:17:44] <jabber> и
+[03.09.2019 12:17:45] <jabber> ?
+[03.09.2019 12:17:51] <progr> как то не удаляя его
+[03.09.2019 12:18:00] <progr> что бы git pull
+[03.09.2019 12:18:04] <progr> не просило пароль
+[03.09.2019 12:18:14] <progr> оно то теперь по шттпс лезет всегда
+[03.09.2019 12:18:21] <jabber> git config
+[03.09.2019 12:18:41] <jabber> progr@git.2nat.biz тунда надо прописать
+[03.09.2019 12:20:03] <progr> progr@pvtbox:~$ cat ./.gitconfig 
+[http]
+       sslverify = false
+[user]
+       email = progr000@gmail.com
+progr@pvtbox:~$ 
+
+[03.09.2019 12:20:14] <progr> что тут нужно написать?
+[03.09.2019 12:20:20] <progr> что бы не испортить ничего
+[03.09.2019 12:21:09] <progr> блин не понимаю
+[03.09.2019 12:21:11] <progr> локально
+[03.09.2019 12:21:13] <progr> у меня
+[03.09.2019 12:21:14] <progr> progr@progr-HP:~/tmp/www/ddd$ git clone progr@git.2nat.biz:PHP/Direct-link.git
+Клонирование в «Direct-link»…
+progr@git.2nat.biz's password: 
+Permission denied, please try again.
+progr@git.2nat.biz's password: 
+
+[03.09.2019 12:21:19] <progr> не принимает
+[03.09.2019 12:21:49] <jabber> ты уже добавил ключ на гит?
+[03.09.2019 12:22:10] <progr> да
+[03.09.2019 12:22:25] <progr> может так надо7
+
+git clone progr000@gmail.com:PHP/Direct-link.git
+[03.09.2019 12:22:33] <progr> это же у меня имя юзера
+[03.09.2019 12:24:24] <progr> нифига не работает клонирование
+[03.09.2019 12:24:48] <jabber> там же gmail =)
+[03.09.2019 12:25:17] <progr> как павильно?
+[03.09.2019 12:34:05] <progr> давай все с начала
+[03.09.2019 12:34:09] <progr> вот с этого момента
+[03.09.2019 12:34:09] <jabber> [12:32:13] <Jabber> а
+[12:32:15] <Jabber> все
+[12:32:16] <Jabber> git clone git@git.2nat.biz:PHP/Direct-link.git
+[12:32:20] <Jabber> так правлиьно
+[12:32:32] <Jabber> в имени не progr писать, а git
+[12:34:04] <Jabber> я выше НЕ  правильно тогда написал
+
+[12:16:10] <Jabber> вместо юзера git писать своего юзера
+[12:16:12] <Jabber> progr
+
+[12:34:30] <Jabber>  ssh -T  git@git.2nat.biz
+Welcome to GitLab, @progr!
+
+
+потмоу что оно понимает так это 
+[03.09.2019 12:34:27] <progr> git clone progr@git.2nat.biz:PHP/Direct-link.git
+[03.09.2019 12:34:32] <jabber> нет
+[03.09.2019 12:44:30] <jabber> [12:32:16] <Jabber> git clone git@git.2nat.biz:PHP/Direct-link.git
+[12:32:20] <Jabber> так правлиьно
+[12:32:32] <Jabber> в имени не progr писать, а git
+[12:34:04] <Jabber> я выше НЕ  правильно тогда написал
+
+[12:16:10] <Jabber> вместо юзера git писать своего юзера
+[12:16:12] <Jabber> progr
+
+[12:34:30] <Jabber>  ssh -T  git@git.2nat.biz
+Welcome to GitLab, @progr!
+
+
+потмоу что оно понимает так это 
+[03.09.2019 12:44:36] <jabber> git clone git@git.2nat.biz:PHP/Direct-link.git
+[03.09.2019 12:44:43] <jabber> поулчается?
+[03.09.2019 12:44:44] <progr> пробую
+[03.09.2019 12:44:52] <progr> у меня что то с ноутом этим сраным
+[03.09.2019 12:44:56] <jabber> ун я сделал с твоего акк на сервере
+[03.09.2019 12:44:58] <progr> вайфай модуль теряет
+[03.09.2019 12:46:10] <progr> как теперь на сервере быть?
+[03.09.2019 12:46:13] <progr> вопрос тот же
+[03.09.2019 12:46:27] <progr> научить репос ходить не по шттпс а через гит
+[03.09.2019 12:46:50] <jabber> на сервере или на ноуте доинаково
+[03.09.2019 12:46:55] <jabber> git clone git@git.2nat.biz:PHP/Direct-link.git
+[03.09.2019 12:47:25] <progr> немного не о том
+[03.09.2019 12:47:37] <progr> я понимаю что если заново клонировать - то норм
+[03.09.2019 12:47:45] <progr> ща подумаю
+[03.09.2019 12:47:57] <progr> наверное подменить папки полностью после клона можно
+[03.09.2019 12:49:32] <jabber> ну вот может поможет тебе
+https://gist.github.com/jexchan/2351996
+[03.09.2019 12:49:46] <jabber> Go to your local repository folder within a command prompt, and display the current remote origin:
+
+>git remote -v
+origin  git@github.com:myuser/myrepo.git (fetch)
+origin  git@github.com:myuser/myrepo.git (push)
+
+Then change origin with:
+
+>git remote set-url origin git@XXX:myuser/myrepo.git
+>git remote -v
+origin  git@XXX:myuser/myrepo.git (fetch)
+origin  git@XXX:myuser/myrepo.git (push)
+[03.09.2019 12:49:48] <jabber> типа таоке
+[03.09.2019 12:49:54] <jabber> я просто не пйому что нужно
+[03.09.2019 12:50:53] <progr> проект был ранее клонирован так
+
+git clone https://git.2nat.biz/PHP/Direct-link.git
+[03.09.2019 12:51:04] <progr> это на сервере
+[03.09.2019 12:51:14] <progr> где он привязан к нашему домену
+[03.09.2019 12:51:18] <jabber> да
+[03.09.2019 12:51:23] <progr> но при попытке 
+
+git pull
+[03.09.2019 12:51:28] <progr> просит юзера и пароль
+[03.09.2019 12:51:38] <progr> понятно что если переклонировать полностью
+[03.09.2019 12:51:42] <progr> то будет норм
+[03.09.2019 12:51:53] <progr> но тогда все придется перенастроить
+[03.09.2019 12:52:15] <jabber> в любом случае либо гит конфиг править либо переклонировать
+[03.09.2019 12:52:23] <progr> ок
+[03.09.2019 12:52:38] <jabber> но проще переклонировать
+[03.09.2019 12:52:44] <jabber> птому чт отебе все равно ег оклонировать
+[03.09.2019 13:32:40] <progr> теперь мне нужен ссл серт
+[03.09.2019 13:32:47] <progr> на сайты
+[03.09.2019 13:32:53] <jabber> да я понял, сделаю

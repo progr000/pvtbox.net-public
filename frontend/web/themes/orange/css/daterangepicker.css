@@ -1,0 +1,24 @@
+.daterangepicker .ranges li.active {
+    background-color: #fc8f42;
+}
+
+.daterangepicker td.active, .daterangepicker td.active:hover {
+    background-color: #fc8f42;
+}
+
+.daterangepicker .drp-selected {
+    color: #fc8f42;
+}
+
+.daterangepicker .drp-buttons .btn {
+    margin-left: 4px;
+    font-size: 13px;
+    padding: 4px 8px;
+    background-color: #fc8f42;
+}
+
+.daterangepicker .drp-buttons .cancelBtn {
+    background-color: #FFFFFF;
+    border: 1px solid #fc8f42;
+    color: #fc8f42;
+}

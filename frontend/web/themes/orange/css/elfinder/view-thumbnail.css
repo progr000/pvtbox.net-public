@@ -1,0 +1,105 @@
+/* view-thumbnail.css */
+/* Wrapper for thumbnail view */
+.elfinder .elfinder-cwd-wrapper-icons {
+  border: 5px solid #f1f1f1;
+}
+
+.elfinder .elfinder-cwd-view-icons {
+}
+
+/* File wrapper */
+.elfinder .elfinder-cwd-view-icons .elfinder-cwd-file {
+  width: 80px;
+  height: 80px;
+  border: 1px solid transparent;
+  border-radius: 0;
+}
+
+/* Hovered file */
+.elfinder .elfinder-cwd-view-icons .elfinder-cwd-file.ui-state-hover {
+  background: #e5f3ff;
+}
+
+/* Selected file */
+.elfinder .elfinder-cwd-view-icons .elfinder-cwd-file.ui-selected {
+  background: #cce8ff;
+  border: 1px solid #99d1ff;
+}
+
+/* File icon */
+.elfinder .elfinder-cwd-view-icons .elfinder-cwd-file .elfinder-cwd-icon {
+}
+
+/* иконка основного вида папки  */
+.elfinder .elfinder-cwd-view-icons .elfinder-cwd-file .elfinder-cwd-icon-directory {
+  background-color: transparent;
+  background-image: url('../../images/elfinder/48px/catalog.png') !important;
+  background-position: center center;
+  background-repeat: no-repeat !important;
+  background-size: 48px auto !important;
+}
+
+/* иконка в диалоге при удалении */
+.elfinder .elfinder-dialog .elfinder-cwd-icon-directory {
+  background-color: transparent;
+  background-image: url('../../images/elfinder/48px/catalog.png') !important;
+  background-position: center center;
+  background-repeat: no-repeat !important;
+  background-size: 48px auto !important;
+}
+
+/* иконка папки с коллаборацией */
+.elfinder .elfinder-cwd-view-icons .elfinder-cwd-file.collaborated_element .elfinder-cwd-icon-directory {
+  background-color: transparent;
+  background-image: url('../../images/elfinder/48px/catalogFull.png') !important;
+  background-position: center center;
+  background-repeat: no-repeat !important;
+  background-size: 48px auto !important;
+}
+
+/* Иконки расшаренных файлов */
+.elfinder .elfinder-cwd-view-icons .elfinder-cwd-file.shared_element .elfinder-cwd-icon {
+  /*background-color: #FF8F47;*/
+  /*
+  background-color: transparent;
+  background-image: url('../../images/elfinder/48px/icon-link.png') !important;
+  background-blend-mode: multiply;
+  background-position: center center;
+  background-repeat: no-repeat !important;
+  background-size: 48px auto !important;
+  */
+}
+
+/* Иконка расшаренной папки */
+.elfinder .elfinder-cwd-view-icons .elfinder-cwd-file.shared_element .elfinder-cwd-icon-directory {
+  background-color: transparent;
+  background-image: url('../../images/elfinder/48px/catalogShare.png') !important;
+  background-position: center center;
+  background-repeat: no-repeat !important;
+  background-size: 48px auto !important;
+}
+
+.elfinder .elfinder-cwd-view-icons .elfinder-cwd-file.shared_element.collaborated_element .elfinder-cwd-icon-directory {
+  background-color: transparent;
+  background-image: url('../../images/elfinder/48px/catalogShareFull.png') !important;
+  background-position: center center;
+  background-repeat: no-repeat !important;
+  background-size: 48px auto !important;
+}
+
+/* File name */
+.elfinder .elfinder-cwd-view-icons .elfinder-cwd-file .elfinder-cwd-filename {
+  color: #000 !important;
+}
+
+.elfinder .elfinder-cwd-view-icons .elfinder-cwd-file.show-deleted .elfinder-cwd-filename {
+  color: #CCCCCC !important;
+}
+
+.elfinder .elfinder-cwd-view-icons .elfinder-cwd-file.hide-deleted {
+  display: none !important;
+}
+
+.elfinder .elfinder-cwd-view-icons .elfinder-cwd-file.not_synced .elfinder-cwd-filename {
+  color: #CCCCCC !important;
+}

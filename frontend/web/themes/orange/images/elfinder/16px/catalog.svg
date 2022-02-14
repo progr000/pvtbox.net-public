@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="23px" height="21px" viewBox="0 0 23 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>Capa_1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="adminPanelMockup" transform="translate(-86.000000, -238.000000)">
+            <g id="Group-8" transform="translate(70.000000, 107.000000)">
+                <g id="Group-9" transform="translate(0.000000, 115.000000)">
+                    <g id="Group-7" transform="translate(16.000000, 15.000000)">
+                        <g id="folder" transform="translate(0.000000, 1.000000)">
+                            <g id="Capa_1">
+                                <path d="M22.1993621,20.7980769 L0.800637931,20.7980769 C0.358482759,20.7980769 0,20.433 0,19.9827115 L0,7.06730769 L23,7.06730769 L23,19.9827115 C23,20.433 22.6415172,20.7980769 22.1993621,20.7980769 Z" id="Shape" fill="#EFCE4A"></path>
+                                <path d="M10.3178793,3.43269231 L10.3178793,1.01728846 C10.3178793,0.567 9.95939655,0.201923077 9.51724138,0.201923077 L0.800637931,0.201923077 C0.358482759,0.201923077 0,0.567 0,1.01728846 L0,3.02884615 L0,7.06730769 L23,7.06730769 L23,4.24805769 C23,3.79776923 22.6415172,3.43269231 22.1993621,3.43269231 L10.3178793,3.43269231 Z" id="Shape" fill="#EBBA16"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,49 @@
+.label-result {
+    display: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+.label-downloaded-successfully {
+    color: #28b351;
+}
+.label-download-failed {
+    color: #e64135;
+}
+.share_state{ width: 100%; }
+.shared-file-name-title {
+    max-width: 300px !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap;
+    display: inline-block;
+    margin-bottom: -6px;
+    font-weight: 600;
+    color: #fc8f42;
+}
+.progress {
+    height: 25px !important;
+}
+.progress .file-info-total {
+    top: 0;
+    font-size: 16px;
+}
+#total-progress-download-rtc {
+    display: none;
+}
+.btn-download-pause {
+    background-color: #e64135;
+}
+.btn-download-pause:hover {
+    background-color: #f74538;
+}
+.btn-download-resume {
+    background-color: #28b351;
+}
+.btn-download-resume:hover {
+    background-color: #2cc859;
+}
+.btn-download-ready {
+}
+.btn-inline {
+    display: inline;
+}

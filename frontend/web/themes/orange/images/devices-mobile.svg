@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="20px" viewBox="0 0 13 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>smartphone (4)</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="devices" transform="translate(-107.000000, -403.000000)" fill="#727272">
+            <g id="smartphone-(4)" transform="translate(107.000000, 403.000000)">
+                <g id="Capa_1">
+                    <path d="M11.05,0 L1.95,0 C0.8775,0 0,0.84375 0,1.875 L0,18.125 C0,19.15625 0.8775,20 1.95,20 L11.05,20 C12.1225,20 13,19.15625 13,18.125 L13,1.875 C13,0.84375 12.1225,0 11.05,0 Z M3.9,0.9375 L9.1,0.9375 L9.1,1.5625 L3.9,1.5625 L3.9,0.9375 Z M6.5,18.75 C5.78203438,18.75 5.2,18.1903516 5.2,17.5 C5.2,16.8096484 5.78203438,16.25 6.5,16.25 C7.21796563,16.25 7.8,16.8096484 7.8,17.5 C7.8,18.1903516 7.21796563,18.75 6.5,18.75 Z M11.7,15 L1.3,15 L1.3,2.5 L11.7,2.5 L11.7,15 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

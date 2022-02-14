@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="adminPanelMockup" transform="translate(-1084.000000, -180.000000)" fill="#4D4D4D">
+            <g id="Group-8" transform="translate(70.000000, 107.000000)">
+                <path d="M1027.002,79.491 L1026.208,79.491 L1025.932,79.765 C1026.907,80.902 1027.5,82.376 1027.5,83.991 C1027.5,87.581 1024.59,90.491 1021,90.491 C1017.41,90.491 1014.5,87.581 1014.5,83.991 C1014.5,80.401 1017.41,77.491 1021,77.491 C1022.615,77.491 1024.088,78.083 1025.225,79.057 L1025.501,78.783 L1025.501,77.991 L1030.499,73 L1031.99,74.491 L1027.002,79.491 L1027.002,79.491 Z M1021,79.491 C1018.514,79.491 1016.5,81.505 1016.5,83.991 C1016.5,86.476 1018.514,88.491 1021,88.491 C1023.485,88.491 1025.5,86.476 1025.5,83.991 C1025.5,81.505 1023.485,79.491 1021,79.491 L1021,79.491 Z" id="Shape" transform="translate(1023.245000, 81.745500) scale(1, -1) translate(-1023.245000, -81.745500) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

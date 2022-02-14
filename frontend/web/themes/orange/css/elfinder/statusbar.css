@@ -1,0 +1,36 @@
+/* statusbar.css */
+/* Statusbar wrapper */
+.elfinder .elfinder-statusbar {
+  /* */
+    display: none;
+}
+
+/* File size */
+.elfinder .elfinder-statusbar .elfinder-stat-size {
+    /* */
+    display: none;
+}
+
+/* Current path (breadcrumb trail) */
+.elfinder .elfinder-statusbar .elfinder-path {
+    /* */
+    display: none;
+}
+
+/* Breadcrumb in current path */
+.elfinder .elfinder-statusbar .elfinder-path a {
+  /* */
+    display: none;
+}
+
+/* Name of selected file(s) */
+.elfinder .elfinder-statusbar .elfinder-stat-selected {
+  /* */
+    display: none;
+}
+
+/* Size of current file(s) */
+.elfinder .elfinder-statusbar .elfinder-stat-size {
+  /* */
+    display: none;
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="95px" height="82px" viewBox="0 0 95 82" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>case</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="95" height="62" rx="10"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="95" height="62" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="features" transform="translate(-259.000000, -473.000000)">
+            <g id="Group-12" transform="translate(199.000000, 433.000000)">
+                <g id="Group-5">
+                    <g id="case" transform="translate(60.000000, 40.000000)">
+                        <g id="Group-8" transform="translate(0.000000, 20.000000)">
+                            <use id="Rectangle-16" stroke="#FF6A00" mask="url(#mask-2)" stroke-width="14" fill="#FFFBDB" xlink:href="#path-1"></use>
+                            <g id="Group-6" transform="translate(38.802817, 19.333333)" fill="#FF6A00">
+                                <ellipse id="Oval" cx="9.70070423" cy="7.65891473" rx="9.70070423" ry="7.65891473"></ellipse>
+                                <rect id="Rectangle" x="3.34507042" y="9.33333333" width="11.5195863" height="16.496124" rx="3"></rect>
+                            </g>
+                        </g>
+                        <path d="M26,0 L69,0 L69,20 L26,20 L26,0 Z M30.703125,6.66666667 L64.96875,6.66666667 L64.96875,20 L30.703125,20 L30.703125,6.66666667 Z" id="Combined-Shape" fill="#FF6A00"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,42 @@
+#preview-body {
+    position: relative;
+    border: 1px solid #CCCCCC;
+    background-color: #eee;
+    text-align: center;
+    padding: 3px;
+    width: 100%;
+    *min-height: 200px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    *overflow: hidden auto;
+    display: none;
+}
+.media_,
+.share-media_ {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#pre_ {
+    text-align: left;
+    font-size: 12px;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+#media_ canvas {
+    *width: 90%;
+    margin: 2px 2px;
+}
+.share-has-password span,
+.no-online-nodes span,
+.try-download-it span,
+.preview-loading span {
+    color: #aaaaaa;
+    font-weight: 600;
+    font-size: 14px;
+}
+#wss-data {
+    padding-bottom: 30px;
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="19px" viewBox="0 0 16 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="adminPanelMockup" transform="translate(-176.000000, -178.000000)" fill="#4D4D4D">
+            <g id="Group-8" transform="translate(70.000000, 107.000000)">
+                <path d="M118,71 L107.714286,71 C106.767143,71 106,71.783125 106,72.75 L106,85 L107.714286,85 L107.714286,72.75 L118,72.75 L118,71 L118,71 Z M120.266667,74 L110.733333,74 C109.775667,74 109,74.7964444 109,75.7777778 L109,88.2222222 C109,89.2035556 109.775667,90 110.733333,90 L120.266667,90 C121.223467,90 122,89.2035556 122,88.2222222 L122,75.7777778 C122,74.7964444 121.223467,74 120.266667,74 L120.266667,74 Z M111,76 L120,76 L120,88 L111,88 L111,76 Z" id="Shape" transform="translate(114.000000, 80.500000) scale(1, -1) translate(-114.000000, -80.500000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

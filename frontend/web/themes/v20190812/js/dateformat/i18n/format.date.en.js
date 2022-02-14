@@ -1,0 +1,50 @@
+if (formatDate && formatDate.prototype) {
+    formatDate.prototype.lang = {
+        'dateUnknown' : 'unknown',
+
+        'Today'       : 'Today',
+        'Yesterday'   : 'Yesterday',
+
+        'msJan'       : 'Jan',
+        'msFeb'       : 'Feb',
+        'msMar'       : 'Mar',
+        'msApr'       : 'Apr',
+        'msMay'       : 'May',
+        'msJun'       : 'Jun',
+        'msJul'       : 'Jul',
+        'msAug'       : 'Aug',
+        'msSep'       : 'Sep',
+        'msOct'       : 'Oct',
+        'msNov'       : 'Nov',
+        'msDec'       : 'Dec',
+
+        'January'     : 'January',
+        'February'    : 'February',
+        'March'       : 'March',
+        'April'       : 'April',
+        'May'         : 'May',
+        'June'        : 'June',
+        'July'        : 'July',
+        'August'      : 'August',
+        'September'   : 'September',
+        'October'     : 'October',
+        'November'    : 'November',
+        'December'    : 'December',
+
+        'Sunday'      : 'Sunday',
+        'Monday'      : 'Monday',
+        'Tuesday'     : 'Tuesday',
+        'Wednesday'   : 'Wednesday',
+        'Thursday'    : 'Thursday',
+        'Friday'      : 'Friday',
+        'Saturday'    : 'Saturday',
+
+        'Sun'         : 'Sun',
+        'Mon'         : 'Mon',
+        'Tue'         : 'Tue',
+        'Wed'         : 'Wed',
+        'Thu'         : 'Thu',
+        'Fri'         : 'Fri',
+        'Sat'         : 'Sat',
+    };
+}

@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /testscripts/
+Disallow: /elfinder/
+Disallow: /content/
+Disallow: /uploads/
+#Disallow: /assets/
+#Disallow: /themes/
+
+Sitemap: https://pvtbox.net/sitemap.xml

@@ -1,0 +1,182 @@
+/* conferences table column width */
+table.conferences-tbl {
+    margin-top: 0;
+}
+
+table.conferences-tbl td {
+    border-bottom: 1px solid #eaeaea;
+}
+
+table.conferences-tbl td:first-child {
+    width: 5%;
+}
+
+table.conferences-tbl .reg-info {
+    font-size: 12px;
+    line-height: 1.35em;
+}
+table.conferences-tbl th:nth-child(1),
+table.conferences-tbl td:nth-child(1) {
+    width: 25%;
+}
+table.conferences-tbl th:nth-child(2),
+table.conferences-tbl td:nth-child(2) {
+
+}
+table.conferences-tbl th:nth-child(3),
+table.conferences-tbl td:nth-child(3) {
+    width: 10%;
+}
+table.conferences-tbl th:nth-child(4),
+table.conferences-tbl td:nth-child(4) {
+    width: 5%;
+    white-space: nowrap;
+}
+table.conferences-tbl td:nth-child(4) a {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+table.conferences-tbl td a svg {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    top: 6px;
+    margin-right: 5px;
+    fill: #fc8f42;
+}
+
+.instant-call,
+.instant-call:visited {
+    color: #4caf4f;
+    font-weight: 600;
+    font-size: 18px;
+    text-decoration: none;
+}
+.instant-call:hover {
+    text-decoration: none;
+    color: #56c758;
+}
+.conference-control svg {
+    width:24px;
+    height:24px;
+    position: relative;
+    top: 6px;
+}
+.conference-control .instant-call svg {
+    fill: #4caf4f;
+}
+.conference-control .instant-call:hover svg {
+    fill: #56c758;
+}
+
+.conference-control .svg-icons.on svg {
+    fill: #fc8f42;
+}
+.conference-control .svg-icons.off svg {
+    fill: #919191;
+}
+/*.conference-control .voice-status svg:hover,*/
+/*.conference-control .video-status svg:hover {*/
+/*fill: #fda76a;*/
+/*}*/
+.conference-control .delimiter {
+    border-left: 3px solid #919191;
+    margin: 0 10px 0 10px;
+}
+
+#participants-select-modal .popup-conference-name {
+    color: #fc8f42;
+}
+#participants-select-modal .colleague-frm {
+    margin-bottom: 5px;
+}
+.conference-name {
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+    color: #424242;
+}
+#available-participants-list .img-progress {
+    margin-top: 70px;
+    display: block;
+}
+.available-participant .manager-list__col input[type=checkbox] {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    opacity: 1;
+    position: relative;
+    top: 3px;
+    margin-right: 6px;
+}
+
+.participants-list .img-progress {
+    display: inline-block;
+    margin: 0 0 0 10px;
+    padding: 0;
+    background-size: 20px 20px;
+    width: 20px;
+    height: 20px;
+}
+.participants-list a {
+    text-decoration: none;
+    font-weight: 600;
+}
+.participants-list a:not(:first-child) {
+    margin-left: 3px;
+}
+
+.participants-list a.participant-owner-online {
+    color: #52792e;
+}
+.participants-list a.participant-owner-offline {
+    color: #767676
+}
+
+.participants-list a.participant-joined-online {
+    color: #52792e;
+}
+.participants-list a.participant-joined-offline {
+    color: #767676
+}
+
+.participants-list a.participant-invited-online {
+    color: #52792e
+}
+.participants-list a.participant-invited-offline {
+    color: #e0e0e0
+}
+
+.progress-loading {
+    display: none;
+}
+.progress-loading .img-progress {
+    margin-top: 70px;
+    display: block;
+}
+.view-list-participants svg,
+.edit-list-participants svg {
+    width:24px;
+    height:24px;
+    position: relative;
+    top: 6px;
+}
+.manager-list__row-conf.ui-selected td {
+    background: #cce8ff;
+}
+.conference-status-idle {
+    font-weight: 600;
+    color: #424242;
+}
+.conference-status-live {
+    font-weight: 600;
+    color: #4caf4f;
+}
+a.cancel-conference {
+    *position: relative;
+    top: 6px;
+    *float: right;
+}
+.conference-open-join-link {
+    text-decoration: none;
+}

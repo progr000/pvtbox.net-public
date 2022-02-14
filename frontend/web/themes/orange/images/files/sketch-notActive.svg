@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="15px" viewBox="0 0 12 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>AllFiles</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="adminPanelAll" transform="translate(-364.000000, -554.000000)" fill="#CFCFCF">
+            <g id="Group-8" transform="translate(70.000000, 72.000000)">
+                <path d="M295.484375,482 C294.667969,482 294.007422,482.675 294.007422,483.5 L294,495.5 C294,496.325 294.660547,497 295.476953,497 L304.390625,497 C305.207031,497 305.875,496.325 305.875,495.5 L305.875,486.5 L301.421875,482 L295.484375,482 Z M300.875,487.625 L300.875,483.25 L305.25,487.625 L300.875,487.625 Z" id="AllFiles"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,295 @@
+<?php
+
+/* @var $this yii\web\View */
+/* @var $model_signup2 \frontend\models\forms\SignupForm */
+
+use yii\helpers\Html;
+use yii\bootstrap\ActiveForm;
+use common\models\Preferences;
+use yii\helpers\Url;
+
+$this->title = Yii::t('app/pages', 'Home');
+?>
+<!-- .home -->
+<div class="home">
+
+    <div class="home__cont">
+
+        <div class="home__row">
+
+            <div class="home__col">
+                <img class="home-img" id="" src="/themes/orange/images/santa-klaus.jpg" __alt="img" />
+            </div>
+
+            <div class="home__col">
+
+                <div class="home-logo"><a href="javascript:void(0)"><img src="/themes/orange/images/logo-big.svg" alt="img" /></a></div>
+
+                <div class="home-info">
+                    <p>Secure, private peer-2-peer cloud service with strong end-2-end encryption.</p>
+                    <p>Fast and confidential file transfer of any size to any device.</p>
+                </div>
+
+                <div class="icon-brand">
+                    <a class="icon-brand-android" href="javascript:void(0)"></a>
+                    <a class="icon-brand-unix" href="javascript:void(0)"></a>
+                    <a class="icon-brand-apple" href="javascript:void(0)"></a>
+                    <a class="icon-brand-windows" href="javascript:void(0)"></a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- END .home -->
+
+
+
+
+<!-- .advantage -->
+<div class="advantage">
+
+
+    <div class="advantage__cont">
+
+        <div class="title"><h2>What are our benefits from others?</h2></div>
+
+        <div class="advantage__row">
+
+            <div class="advantage__col">
+
+                <div class="advantage-box advantage-confidentiality">
+                    <div class="advantage-img"></div>
+                    <h4>Confidentiality</h4>
+                    <div class="advantage-text">
+                        <p>Due to the decentralized structure, your files are stored only on your trusted Devices (PC, tablet, NAS etc), without sending to third-party servers.</p>
+                    </div>
+                    <a href="<?= Url::to(['/features#confidentiality']) ?>">More info…</a>
+                </div>
+
+            </div>
+
+            <div class="advantage__col">
+
+                <div class="advantage-box advantage-security">
+                    <div class="advantage-img"></div>
+                    <h4>Security</h4>
+                    <div class="advantage-text">
+                        <p>The end-2-end data encryption built into our products eliminates the substitution or interception of any files being sent. Nobody except you can decode the data, including us.</p>
+                    </div>
+                    <a href="<?= Url::to(['/features#security']) ?>">More info…</a>
+                </div>
+
+            </div>
+
+            <div class="advantage__col">
+
+                <div class="advantage-box advantage-speed">
+                    <div class="advantage-img"></div>
+                    <h4>High Speed</h4>
+                    <div class="advantage-text">
+                        <p>Thanks to p2p technology for file transfer, a stunning speed is achieved. The data passes along the shortest path and as a consequence saves your time and resources.</p>
+                    </div>
+                    <a href="<?= Url::to(['/features#speed']) ?>">More info…</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- END .advantage -->
+
+
+
+
+<!-- .informList -->
+<div class="informList">
+
+    <div class="advantage__cont" style="padding-top: 20px; padding-bottom: 30px;">
+
+        <div class="title" style="padding-bottom: 10px;"><h2>Full control in your hands</h2></div>
+
+        <div class="row row-big-cloud hide_" style="display: flex; align-items:center; margin-top: 20px;">
+
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6" style="padding-right: 10px;">
+
+                <div class="alert-cloud float-right pull-right">
+                    Automatic and selective synchronization between devices is
+                    available, collaboration with colleagues, transferring files
+                    to external users and many others tunings.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </div>
+
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-6">
+
+                <img src="/themes/orange/images/cloud_v2.jpg" alt="cloud" style="width: 100%;" />
+
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6" style="padding-left: 10px;">
+
+                <div class="alert-cloud">
+                    Protected from external intrusions, listening, interception,
+                    safe and high-speed tool for business saves time and resources
+                    of your company. Right here, right now. Get Private. Get a Private Box!
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="row row-big-cloud hide_" style="padding-top: 10px;">
+
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-6">
+
+                <div class="alert-cloud">
+                    You create your own trusted cloud from your controlled devices
+                    (PC, Mac, Server, Tablet etc.) by installing the Private Box application on
+                    each device that you would like to make a part of your company's infrastructure.
+                    Cloud may contains from 1 to infinity of devices of any capacity.
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+
+            </div>
+
+        </div>
+
+        <div class="row row-small-cloud hide" style="padding: 0px 5px 0px 5px; text-align: center;">
+
+            <img src="/themes/orange/images/cloud_v2.jpg" alt="cloud" style="width: 100%; max-width: 500px;" />
+
+            <div class="alert-cloud">Automatic and selective synchronization between devices is available, collaboration with colleagues, transferring files to external users and many others tunings. </div>
+
+            <div class="alert-cloud">Protected from external intrusions, listening, interception, safe and high-speed tool for business saves time and resources of your company. Right here, right now. Get Private. Get a Private Box!</div>
+
+            <div class="alert-cloud">You create your own trusted cloud from your controlled devices (PC, Mac, Server, Tablet etc.) by installing the Private Box application on each device that you would like to make a part of your company's infrastructure. Cloud may contains from 1 to infinity of devices of any capacity.</div>
+
+        </div>
+
+    </div>
+
+
+</div>
+<!-- END .informList -->
+
+
+
+<?php
+if (Yii::$app->user->isGuest) {
+    ?>
+
+    <!-- .create-account -->
+    <div class="create-account">
+
+        <div class="create-account__cont">
+
+            <span class="create-account__title">CREATE AN ACCOUNT</span>
+
+
+            <?php
+            $form = ActiveForm::begin([
+                'id'     => "form-signup2",
+                'action' => "/user/signup2",
+                'options' => [
+                    'onsubmit' => "return false",
+                    'class'    => "create-account__form",
+                ],
+                //'enableAjaxValidation' => true,
+                //'enableClientValidation' => true,
+                //'validateOnSubmit' => false,
+            ]);
+            ?>
+
+            <?=
+            $form->field($model_signup2, 'user_email2', ['enableAjaxValidation' => true])
+                ->textInput([
+                    'type' => "email",
+                    'placeholder' => "E-mail",
+                    'autocomplete' => "off",
+                    //'id' => "signupform2-user_email",
+                    //'name' => "Signup2Form[user_email]",
+                ])
+                ->label(false)
+            ?>
+
+            <?=
+            $form->field($model_signup2, 'password2'/*, ['enableClientValidation' => false,]*/)
+                ->passwordInput([
+                    'placeholder' => "Password",
+                    'autocomplete' => "off",
+                    //'id' => "signupform2-password",
+                    //'name' => "Signup2Form[password]",
+                ])
+                ->label(false)
+            ?>
+
+            <?=
+            $form->field($model_signup2, 'password_repeat2'/*, ['enableClientValidation' => false,]*/)
+                ->passwordInput([
+                    'placeholder' => "Retype password",
+                    'autocomplete' => "off",
+                    //'id' => "signupform2-password_repeat",
+                    //'name' => "Signup2Form[password_repeat]",
+                ])
+                ->label(false)
+            ?>
+
+            <div id="signup2-captcha-container" class="captcha-container">
+                <?php
+                $cnt = intval(Yii::$app->cache->get(Yii::$app->params['RegisterCacheKey']));
+                if ($cnt >= Preferences::getValueByKey('RegisterCountNoCaptcha', 1, 'int')) {
+                    echo $form->field($model_signup2, 'reCaptcha')->widget(
+                        \himiklab\yii2\recaptcha\ReCaptcha::className(),
+                        ['siteKey' => Preferences::getValueByKey('reCaptchaPublicKey')]
+                    );
+                }
+                ?>
+            </div>
+
+            <?=
+            $form->field($model_signup2, 'acceptRules2', [
+                'template' => "",
+                'inputTemplate' => "",
+                'checkboxTemplate'=>'
+                        <div class="form-group create-account-check" data-toggle="buttons">
+                            <label class="btn btn-checkbox active" for="accept-rules2" id="label-accept-rules2">
+                                {input}
+                                I have read and accept
+                            </label>
+                            <a class="rules-dialod" href="javascript:void(0)">Terms and Conditions</a>
+                            {error}
+                            {hint}
+                        </div>',
+            ])
+                ->checkbox(['id' => "accept-rules2", 'value' => true, 'autocomplete' => "off", 'inputTemplate' => ""])
+                ->label(false)
+            ?>
+
+            <?= Html::submitButton(Yii::t('app/pages', 'Sign Up for Free'), ['class' => 'btn-big', 'name' => 'signup-button']) ?>
+
+
+            <?php
+            ActiveForm::end();
+            ?>
+
+        </div>
+
+    </div>
+    <!-- END .create-account -->
+    <?php
+}
+?>

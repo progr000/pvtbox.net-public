@@ -1,0 +1,523 @@
+#join-control, #camera-control {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#join-button {
+    vertical-align: top;
+}
+
+#stop-streams {
+    display: none;
+}
+
+#camera-info {
+    margin-left: 2em;
+    font-family: monospace;
+    font-size: 80%;
+}
+
+#leave-room {
+    display: none;
+    float: right;
+}
+
+#available-tracks {
+    flex: none;
+    font-family: monospace;
+    margin-top: 1em;
+}
+
+.track-subscribe > * {
+    margin-right: 1.5em;
+}
+.track-subscribe > *:not(:first-child) {
+    font-family: monospace;
+    font-size: 80%;
+}
+
+#remote-audio {
+    display: none;
+}
+
+.track-ctrl > div {
+    display: inline;
+}
+.track-ctrl * {
+    vertical-align: middle;
+}
+
+#local-screen-pause-ctrl {
+    display: none;
+}
+
+#local-screen-audio-pause-ctrl {
+    display: none;
+}
+
+input[type=checkbox]:not(old),
+input[type=radio]:not(old) {
+    width: 20px;
+    height: 20px;
+    opacity: 1;
+    display: inline;
+}
+
+/******************* main-conference-container ********************/
+.main-conference-container {
+    background-color: #ccc;
+    padding: 2px;
+}
+
+/******************* conference name ********************/
+.conference-name {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    width: 100%;
+    padding: 2px 2px 2px 2px;
+    background-color: #F1F1F1;
+    margin-top: 0px;
+    color: #fc8f42;
+}
+
+/******************* participants carousel ********************/
+.content {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.participants-carousel-container {
+    width: 100%;
+    height: 166px;
+    margin-top: 2px;
+    background-color: #F1F1F1;
+    padding: 5px 30px 5px 30px;
+}
+.slick-prev-participant,
+.slick-next-participant {
+    height: 100px !important;
+    border: 1px solid #ccc !important;
+    border-radius: 10%;
+    background-color: #ccc !important;
+}
+.participants-carousel {
+    border: 1px solid #ccc;
+    height: 156px;
+    white-space: nowrap;
+}
+div.single-mode div.carousel-video-streams {
+    margin: 2px;
+    padding: 0;
+    display: inline-block;
+    border: 3px solid #b8b8b8;
+    height: 150px;
+    cursor: pointer;
+    position: relative;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+div.single-mode div.carousel-video-streams video {
+    padding: 0;
+    height: 144px;
+    width: auto;
+    /*width: 192px;*/
+    background-color: #000;
+}
+.participants-gallery-container {
+    padding: 5px;
+}
+div.gallery-mode {
+    text-align: center;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+div.gallery-mode div.carousel-video-streams {
+    margin: 2px;
+    padding: 0;
+    display: inline-block;
+    border: 3px solid #b8b8b8;
+    height: 420px;
+    cursor: pointer;
+    position: relative;
+}
+div.gallery-mode div.carousel-video-streams video {
+    padding: 0;
+    height: 414px;
+    width: auto;
+    background-color: #000;
+}
+div.participant-name {
+    position: absolute;
+    display: block;
+    *bottom: 13px;
+    *right: 34px;
+    top: 10px;
+    left: 10px;
+    padding: 4px 4px 4px 4px;
+    margin: 0;
+    line-height: 10px;
+    font-size: 14px;
+    color: #333;
+    background-color: #eee;
+    border-radius: 5%;
+    opacity: .6;
+    vertical-align: middle;
+}
+div.participant-mic {
+    position: absolute;
+    display: block;
+    bottom: 10px;
+    right: 10px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+div.participant-mic.on {
+    background-color: #52b80e;
+    -webkit-mask: url('../../images/conferences/microphone.svg') no-repeat 100% 100%;
+    mask: url('../../images/conferences/microphone.svg') no-repeat 100% 100%;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+}
+div.participant-mic.off {
+    background-color: #c52f31;
+    -webkit-mask: url('../../images/conferences/microphone-off.svg') no-repeat 100% 100%;
+    mask: url('../../images/conferences/microphone-off.svg') no-repeat 100% 100%;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+}
+div.full-screen-participant-video {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #919191;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+div.full-screen-participant-video.on {
+    -webkit-mask: url('../../images/conferences/fullscreen-exit.svg') no-repeat 100% 100%;
+    mask: url('../../images/conferences/fullscreen-exit.svg') no-repeat 100% 100%;
+}
+div.full-screen-participant-video.off {
+    -webkit-mask: url('../../images/conferences/fullscreen.svg') no-repeat 100% 100%;
+    mask: url('../../images/conferences/fullscreen.svg') no-repeat 100% 100%;
+}
+@media screen and (max-width: 1180px) {
+    div.gallery-mode div.carousel-video-streams {
+        height: 320px;
+    }
+    div.gallery-mode div.carousel-video-streams video {
+        height: 314px;
+    }
+}
+@media screen and (max-width: 920px) {
+    div.gallery-mode div.carousel-video-streams {
+        height: 250px;
+    }
+    div.gallery-mode div.carousel-video-streams video {
+        height: 244px;
+    }
+}
+@media screen and (max-width: 740px) {
+    div.gallery-mode div.carousel-video-streams {
+        height: 200px;
+    }
+    div.gallery-mode div.carousel-video-streams video {
+        height: 194px;
+    }
+}
+@media screen and (max-width: 600px) {
+    div.gallery-mode div.carousel-video-streams {
+        height: 150px;
+    }
+    div.gallery-mode div.carousel-video-streams video {
+        height: 144px;
+    }
+}
+@media screen and (max-width: 460px) {
+    div.gallery-mode div.carousel-video-streams {
+        height: 100px;
+    }
+    div.gallery-mode div.carousel-video-streams video {
+        height: 94px;
+    }
+}
+@media screen and (max-height: 600px), screen and (max-width: 700px) {
+    .content {
+        padding-top: 16px;
+    }
+    .participants-carousel-container {
+        height: 120px;
+    }
+    .slick-prev-participant,
+    .slick-next-participant {
+        height: 80px !important;
+    }
+    .participants-carousel {
+        height: 110px;
+    }
+    div.single-mode div.carousel-video-streams {
+        height: 104px;
+    }
+    div.single-mode div.carousel-video-streams video {
+        height: 98px;
+    }
+    div.participant-name {
+        top: 4px;
+        left: 4px;
+        line-height: 8px;
+        font-size: 12px;
+        padding: 2px 2px 3px 2px;
+    }
+    div.participant-mic {
+        bottom: 8px;
+        right: 8px;
+        width: 20px;
+        height: 20px;
+    }
+    div.full-screen-participant-video {
+        top: 8px;
+        right: 8px;
+        width: 20px;
+        height: 20px;
+    }
+}
+@media screen and (max-height: 400px), screen and (max-width: 500px) {
+    .content {
+        padding-top: 10px;
+    }
+    .participants-carousel-container {
+        height: 82px;
+    }
+    .slick-prev-participant,
+    .slick-next-participant {
+        height: 42px !important;
+    }
+    .participants-carousel {
+        height: 72px;
+    }
+    div.single-mode div.carousel-video-streams {
+        height: 66px;
+    }
+    div.single-mode div.carousel-video-streams video {
+        height: 60px;
+    }
+    div.participant-name {
+        top: 4px;
+        left: 4px;
+        line-height: 8px;
+        font-size: 12px;
+        padding: 2px 2px 3px 2px;
+    }
+    div.participant-mic {
+        bottom: 6px;
+        right: 6px;
+        width: 18px;
+        height: 18px;
+    }
+    div.full-screen-participant-video {
+        top: 6px;
+        right: 6px;
+        width: 18px;
+        height: 18px;
+    }
+}
+div.carousel-video-streams.active-speaker {
+    border: 3px solid #52b80e !important;
+}
+div.carousel-video-streams.manual-speaker,
+div.carousel-video-streams.active-speaker.manual-speaker {
+    border: 3px solid #fa9202 !important;
+}
+
+/******************* main stream video ********************/
+.main-video-container {
+    width: 100%;
+    margin-top: 2px;
+    background-color: #F1F1F1;
+    padding: 5px 5px 5px 5px;
+    text-align: center;
+}
+.main-video-stream-div {
+    padding: 0;
+    display: inline-block;
+    border: 3px solid #b8b8b8;
+    *height: 150px;
+    *cursor: pointer;
+    position: relative;
+}
+.main-video-container video {
+    width: auto;
+    max-width: 100%;
+    min-height: 200px;
+    *height: 300px;
+    background-color: #000;
+    display: inline-block;
+    margin-bottom: -6px;
+}
+.main-video-stream-div div.participant-name {
+    top: 10px;
+    left: 10px;
+    line-height: 8px;
+    font-size: 14px;
+    padding: 4px 4px 4px 4px;
+}
+.main-video-stream-div div.participant-mic {
+    bottom: 10px;
+    right: 10px;
+    width: 24px;
+    height: 24px;
+}
+
+/******************* conference-control ********************/
+.conference-control {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    width: 100%;
+    padding: 2px 2px 2px 2px;
+    background-color: #F1F1F1;
+    margin-top: 2px;
+}
+.control-right {
+    float: right;
+}
+.control-left {
+    float: left;
+}
+
+.only-for-desktop,
+.only-for-mobile {
+    display: none;
+}
+a.exit-room{
+    display: none;
+}
+a.share-screen {
+    display: none;
+}
+a.full-screen {
+    display: none;
+}
+a.svg-icons {
+    /*position: relative;*/
+    /*top: 4px;*/
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+}
+a.svg-icons.on {
+    background-color: #fc8f42;
+}
+a.svg-icons.off {
+    background-color: #919191;
+}
+
+a.full-screen.on {
+    -webkit-mask: url('../../images/conferences/fullscreen-exit.svg') no-repeat 100% 100%;
+    mask: url('../../images/conferences/fullscreen-exit.svg') no-repeat 100% 100%;
+}
+a.full-screen.off {
+    background-color: #fc8f42;
+    -webkit-mask: url('../../images/conferences/fullscreen.svg') no-repeat 100% 100%;
+    mask: url('../../images/conferences/fullscreen.svg') no-repeat 100% 100%;
+}
+
+a.share-screen.on {
+    -webkit-mask: url('../../images/conferences/share-screen.svg') no-repeat 100% 100%;
+    mask: url('../../images/conferences/share-screen.svg') no-repeat 100% 100%;
+}
+a.share-screen.off {
+    -webkit-mask: url('../../images/conferences/share-screen.svg') no-repeat 100% 100%;
+    mask: url('../../images/conferences/share-screen.svg') no-repeat 100% 100%;
+}
+
+a.video-status.on {
+    -webkit-mask: url('../../images/conferences/video.svg') no-repeat 100% 100%;
+    mask: url('../../images/conferences/video.svg') no-repeat 100% 100%;
+}
+a.video-status.off {
+    -webkit-mask: url('../../images/conferences/video.svg') no-repeat 100% 100%;
+    mask: url('../../images/conferences/video.svg') no-repeat 100% 100%;
+}
+
+a.voice-status.on {
+    -webkit-mask: url('../../images/conferences/microphone.svg') no-repeat 100% 100%;
+    mask: url('../../images/conferences/microphone.svg') no-repeat 100% 100%;
+}
+a.voice-status.off {
+    -webkit-mask: url('../../images/conferences/microphone.svg') no-repeat 100% 100%;
+    mask: url('../../images/conferences/microphone.svg') no-repeat 100% 100%;
+}
+
+a.exit-room.on {
+    -webkit-mask: url('../../images/conferences/exit-run.svg') no-repeat 100% 100%;
+    mask: url('../../images/conferences/exit-run.svg') no-repeat 100% 100%;
+}
+a.exit-room.off {
+    -webkit-mask: url('../../images/conferences/exit-run.svg') no-repeat 100% 100%;
+    mask: url('../../images/conferences/exit-run.svg') no-repeat 100% 100%;
+}
+
+a.guest-share-link.on {
+    -webkit-mask: url('../../images/conferences/create-guest-share-link.svg') no-repeat 100% 100%;
+    mask: url('../../images/conferences/create-guest-share-link.svg') no-repeat 100% 100%;
+}
+a.guest-share-link.off {
+    background-color: #fc8f42;
+    -webkit-mask: url('../../images/conferences/remove-guest-share-link.svg') no-repeat 100% 100%;
+    mask: url('../../images/conferences/remove-guest-share-link.svg') no-repeat 100% 100%;
+}
+
+a.gallery-mode-link {
+    background-color: #fc8f42;
+    -webkit-mask: url('../../images/conferences/gallery-mode.svg') no-repeat 100% 100%;
+    mask: url('../../images/conferences/gallery-mode.svg') no-repeat 100% 100%;
+}
+a.single-mode-link {
+    background-color: #fc8f42;
+    -webkit-mask: url('../../images/conferences/single-mode.svg') no-repeat 100% 100%;
+    mask: url('../../images/conferences/single-mode.svg') no-repeat 100% 100%;
+}
+a.conference-manage-guest-link {
+    -webkit-mask: url('../../images/conferences/share-variant.svg') no-repeat 100% 100%;
+    mask: url('../../images/conferences/share-variant.svg') no-repeat 100% 100%;
+}
+
+/* full-screen */
+video.full-screen {
+    height: 100% !important;
+    width: 100% !important;
+}
+
+/* fucking manual full-screen */
+.container-full-screen {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    z-index: 9999999 !important;
+    width: 100% !important;
+    height: 100% !important;
+}
+.temporary-container-full-screen {
+    background-color: #000;
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+}
+.temporary-container-full-screen div.main-video-stream-div,
+.temporary-container-full-screen div.carousel-video-streams {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+}
+.temporary-container-full-screen div video {
+    display: block;
+}

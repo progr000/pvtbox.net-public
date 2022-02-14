@@ -1,0 +1,179 @@
+/* navbar.css */
+/* Main wrapper for navbar */
+.elfinder .elfinder-navbar {
+    /*border-right: 1px solid #e5e5e5;*/
+    width: 230px;
+    margin-right: 5px;
+    border: 5px solid #f1f1f1;
+    background-color: #F7F7F7;
+}
+
+@media (max-width: 900px) {
+    .elfinder .elfinder-navbar {
+        /*width: 150px;*/
+        display: none !important;
+    }
+}
+
+@media (max-width: 500px) {
+    .elfinder .elfinder-navbar {
+        display: none !important;
+    }
+}
+
+/* Directories */
+.elfinder .elfinder-navbar .elfinder-navbar-dir {
+    color: #000;
+    border-radius: 0;
+    /*height: 40px;*/
+
+    vertical-align: top;
+    text-align: left;
+    min-height: 21px;
+    font-size: 14px;
+    line-height: 25px;
+    color: #292929;
+    padding-left: 42px;
+    cursor: pointer;
+    font-family: SegoeUI, sans-serif;
+    font-weight: 400;
+
+}
+
+/* Hovered directory  */
+.elfinder .elfinder-navbar .elfinder-navbar-dir:hover {
+    background: #e5f3ff;
+    /*border-color: #e5f3ff;*/
+    /*
+    -webkit-box-shadow: 0px 0px 0px 1px #c1c1c1 inset;
+    -moz-box-shadow: 0px 0px 0px 1px #c1c1c1 inset;
+    box-shadow: 0px 0px 0px 1px #c1c1c1 inset;
+    */
+    /*background-color: #f7f7f7;*/
+}
+
+/* Current/active directory (cwd) */
+.elfinder .elfinder-navbar .elfinder-navbar-dir.ui-state-active {
+    /*
+    background: #cce8ff;
+    border: 1px solid #99d1ff;
+    */
+    /*
+    -webkit-box-shadow: 0px 0px 0px 1px #f0f0f0 inset;
+    -moz-box-shadow: 0px 0px 0px 1px #f0f0f0 inset;
+    box-shadow: 0px 0px 0px 1px #f0f0f0 inset;
+    */
+    background-color: #cce8ff;
+}
+
+
+/* Howvered cwd */
+.elfinder .elfinder-navbar .elfinder-navbar-dir.ui-state-active:hover {
+    /* */
+    /*
+    -webkit-box-shadow: 0px 0px 0px 1px #c1c1c1 inset;
+    -moz-box-shadow: 0px 0px 0px 1px #c1c1c1 inset;
+    box-shadow: 0px 0px 0px 1px #c1c1c1 inset;
+    */
+}
+
+/* Icons */
+/* Arrow */
+.elfinder .elfinder-navbar .elfinder-navbar-arrow {
+    /* */
+    background-image: url('../../images/elfinder/16px/icon-folder-plus.jpg') !important;
+    background-position: 0px center !important;
+    background-repeat: no-repeat !important;
+}
+
+/* Expanded directory arrow */
+.elfinder .elfinder-navbar-expanded .elfinder-navbar-arrow {
+    /* */
+    background-image: url('../../images/elfinder/16px/icon-folder-minus.jpg') !important;
+    background-position: 0px center !important;
+    background-repeat: no-repeat !important;
+}
+
+/* All icons (directories) */
+.elfinder .elfinder-navbar .elfinder-navbar-icon {
+    /*
+    background-color: transparent;
+    background-image: url('../../images/elfinder/16px/directory.png') !important;
+    background-position: center center;
+    background-repeat: none;
+    height: 16px;
+    width: 16px;
+    */
+    width: 18px !important;
+    background-image: url('../../images/elfinder/16px/catalog.png') !important;
+    background-position: 0px center !important;
+    background-repeat: no-repeat !important;
+    background-size: 18px auto !important;
+}
+
+.elfinder .elfinder-navbar-dir.shared_element .elfinder-navbar-icon {
+    width: 18px !important;
+    background-image: url('../../images/elfinder/16px/catalog.png') !important;
+    background-position: 0px center !important;
+    background-repeat: no-repeat !important;
+    background-size: 18px auto !important;
+}
+
+.elfinder .elfinder-navbar-dir.collaborated_element .elfinder-navbar-icon {
+    width: 18px !important;
+    background-image: url('../../images/elfinder/16px/catalogFull.png') !important;
+    background-position: 0px center !important;
+    background-repeat: no-repeat !important;
+    background-size: 18px auto !important;
+}
+
+.elfinder .elfinder-navbar-wrapper .elfinder-navbar-dir.show-deleted {
+    color: #CCCCCC !important;
+}
+
+.elfinder .elfinder-navbar-wrapper .elfinder-navbar-dir.hide-deleted {
+    display: none !important;
+}
+
+/* Root/volume */
+.elfinder .elfinder-navbar-root > .elfinder-navbar-icon {
+    /* */
+}
+
+/* Root/volume expanded */
+.elfinder .elfinder-navbar-root.elfinder-navbar-expanded  > .elfinder-navbar-icon {
+    /* */
+}
+
+/* Resizable handle */
+.elfinder .elfinder-navbar .ui-resizable-handle.ui-resizable-e {
+    /* */
+}
+
+.elfinder-navbar .ui-resizable-handle {
+    width: 12px;
+    background: url('../../images/elfinder/resize.png') center center no-repeat;
+}
+.ui-resizable-handle {
+    position: absolute;
+    font-size: 0.1px;
+    display: block;
+    -ms-touch-action: none;
+    touch-action: none;
+}
+
+
+.my-ui-icon, .ui-widget-content .my-ui-icon {
+    background-image: url('../../images/elfinder/ui-icons_222222_256x240.png') !important;
+}
+.my-ui-icon-arrowthick-1-n {
+    background-position: 0 -32px !important;
+}
+
+.ui-icon-arrowthick-1-s {
+    background-position: -64px -32px !important;
+}
+
+.my-icon-check {
+    background-position: -64px -144px !important;
+}

@@ -1,0 +1,35 @@
+table.shared-folder tr:nth-child(2n+1) td {
+    background-color: #f7f7f7;
+}
+table.shared-folder tr td {
+    padding: 8px 8px;
+}
+
+.file-catalog, .elfinder-cwd-icon-folder-download {
+    min-height: 18px;
+    height: auto !important;
+    line-height: normal !important;
+    text-overflow: ellipsis !important;
+    overflow: hidden !important;
+    min-width: 200px;
+}
+
+.elfinder-cwd-icon-video, .elfinder-cwd-icon-flash-video {
+    background-position: 0px -347px;
+}
+
+table.shared-folder tr td a span.file-catalog{
+    background-image: url(../../images/elfinder/16px/catalog.png) !important;
+}
+
+.shared-folder-name-title {
+    max-width: 300px !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap;
+    display: inline-block;
+    margin-bottom: -6px;
+    font-weight: 600;
+    color: #fc8f42;
+}
+

@@ -1,0 +1,16 @@
+<?php
+/** @var \common\models\Users $User */
+/** @var \frontend\models\forms\PurchaseForm $model */
+
+$this->registerJsFile('themes/orange/js/purchase_success.js', ['depends' => 'yii\web\JqueryAsset']);
+
+?>
+
+<div style="text-align: center">
+    <span class="title-min glyphicon glyphicon-ok" style="font-size: xx-large; color: #2b542c;"></span>
+    <br />
+    <span class="title-min">
+        You have paid successfully.<br />
+        Your subscription will be renewed in a few moments.
+    </span>
+</div>
